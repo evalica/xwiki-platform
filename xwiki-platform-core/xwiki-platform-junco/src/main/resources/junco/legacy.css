@@ -335,13 +335,6 @@ th.avatar {
 }
 
 /* ----------------------Content-------------------------*/
-#xwikimaincontainerinner {
-  background: $theme.pageBackgroundColor $!{theme.pageBackgroundImage} $!{theme.pageBackgroundPosition};
-  clear: both;
-  height: 100%;
-  text-align: left;
-}
-
 #contentcontainer {
   clear: both;
 }

@@ -1,0 +1,8 @@
+#template('colorThemeInit.vm')
+/* @group LAYOUT - GENERAL */
+/* --------------------------------------------------------------
+  * General layout elements
+-------------------------------------------------------------- */
+#body {
+  background: $theme.pageBackgroundColor $!{theme.pageBackgroundImage} $!{theme.pageBackgroundPosition};
+}

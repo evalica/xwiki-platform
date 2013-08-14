@@ -1,1 +1,4 @@
+/* Legacy is a cleaned-up version of Colibri */
 @import "$xwiki.getSkinFile('legacy.css', true)#if ("$!{request.colorTheme}" != '')?colorTheme=${request.colorTheme}#end";
+/* Junco's specific rules */
+@import "$xwiki.getSkinFile('junco.css', true)#if ("$!{request.colorTheme}" != '')?colorTheme=${request.colorTheme}#end";
