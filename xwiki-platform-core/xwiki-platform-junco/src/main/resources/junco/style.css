@@ -1,4 +1,5 @@
-/* Legacy is a cleaned-up version of Colibri */
+@import url('//netdna.bootstrapcdn.com/bootstrap/3.0.0-wip/css/bootstrap.min.css');
+/*@import url('//bootswatch.com/amelia/bootstrap.min.css');*/
+/*@import "$xwiki.getSkinFile('themes/default/bootstrap.min.css', true)";*/
 @import "$xwiki.getSkinFile('legacy.css', true)#if ("$!{request.colorTheme}" != '')?colorTheme=${request.colorTheme}#end";
-/* Junco's specific rules */
 @import "$xwiki.getSkinFile('junco.css', true)#if ("$!{request.colorTheme}" != '')?colorTheme=${request.colorTheme}#end";

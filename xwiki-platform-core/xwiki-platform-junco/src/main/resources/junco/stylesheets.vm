@@ -1,5 +1,3 @@
-## Adding Bootstrap (compiled and minified cdn version)
-<link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.0-wip/css/bootstrap.min.css" />
 ## ColorThemes variable initialization
 #template('colorThemeInit.vm')
 ## The default stylesheet configuration option allows to override the default style.css CSS
