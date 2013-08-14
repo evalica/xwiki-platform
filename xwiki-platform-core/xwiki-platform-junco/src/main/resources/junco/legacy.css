@@ -3,69 +3,11 @@
   * 2 spaces indentation for the proprieties
 -------------------------------------------------------------- */
 #template('colorThemeInit.vm')
-/* @group RESET */
+
+/* @group OVERWRITE */
 /* --------------------------------------------------------------
-  * Resets default browser CSS styles.
-  * meyerweb.com/eric/thoughts/2007/05/01/reset-reloaded/
+  * Overwrites the Bootstrap standard values
 -------------------------------------------------------------- */
-html, body, div, span, applet, object, iframe,
-  h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-  a, abbr, acronym, address, big, cite, code,
-  del, dfn, em, font, img, ins, kbd, q, s, samp,
-  small, strike, strong, tt, var,
-  dl, dt, dd, ol, ul, li,
-  fieldset, form, label, legend,
-  table, caption, tbody, tfoot, thead, tr, th, td {
-  border: 0;
-  font-family: inherit;
-  font-size: 100%;
-  font-style: inherit;
-  font-weight: inherit;
-  margin: 0;
-  outline: 0;
-  padding: 0;
-  text-align: inherit;
-  line-height: normal;
-}
-
-/* @group STANDARD */
-/* --------------------------------------------------------------
-  * Sets the styles for standard HTML elements
--------------------------------------------------------------- */
-#body {
-  background-color: $theme.pageBackgroundColor;
-  color: $theme.textColor;
-  font-family: sans-serif;
-  font-size: 87.5%; /* 10px */
-  min-width: 970px;
-  vertical-align: baseline;
-}
-
-a:link, a:active, a:visited {
-  color: $theme.linkColor;
-  text-decoration: none;
-}
-
-a:hover {
-  text-decoration: underline;
-}
-
-a img {
-  border: 0;
-}
-
-h1, h2, h3, h4 , h5, h6 {
-  border-bottom: 1px dotted $theme.borderColor;
-  color: $theme.titleColor;
-  display: block;
-  font-weight: 400;
-  line-height: 1.2em;
-  margin: 20px 0;
-  overflow: hidden;
-}
-h1 *, h2 *, h3 *, h4 *, h5 *, h6 * {
-  line-height: 1.2em;
-}
 /* Font size for Hn is 1.1^(7-n) */
 h1 {
   font-size: 1.77em;
@@ -91,258 +33,185 @@ h6 {
   font-size: 1.1em;
 }
 
-p {
-  line-height: 1.4em;
-  margin: .5em 0;
-}
-table p:first-child {
-  margin-top: 0;
-}
-table p:last-child {
-  margin-bottom: 0;
-}
-p * {
-  line-height: 1.4em;
+/* We use lists for content in panels, vertical-menus, etc. */
+ul, ol {
+  padding: 0;
+  margin-left: 2em;
 }
 
-ol {
-  margin: 0 0 0 2em;
-}
-
-ul {
-  list-style-type: circle;
-  margin: 0 0 0 2em;
-}
-
-strong {
-  font-weight: 700;
-}
-
-em {
-  font-style: italic;
-}
-
-tt {
-  font-family: monospace;
-}
-
-blockquote {
-  background: $theme.backgroundSecondaryColor none repeat scroll 0 0;
-  border-left: 2px solid $theme.borderColor;
-  display: block;
-  padding: .3em 0 0 1em;
-  quotes: none;
-}
-
+/* Support nested <dl> */
 li > dl, dt > dl, dd > dl {
   margin-left: 2em;
 }
 
-dt {
-  font-style: normal;
-  font-weight: 700;
-  margin: 10px 0 0;
+label {
+  font-weight: 400;
 }
 
-input[type="text"], input[type="password"] {
-  background-color: $theme.pageContentBackgroundColor;
-  #css3_backgroundLinearGradient({
-     'to': 'bottom',
-     'colors': [
-      {'color': $theme.fieldGradientColor, 'position': '1px'},
-      {'color': $theme.pageContentBackgroundColor, 'position': '8px'}
-    ]
-  })
-  border: 1px solid $theme.borderColor;
-  border-radius: 3px 3px 3px 3px;
-  box-shadow: 0px 1px 2px $theme.borderColor;
+/* @group COLORTHEME */
+/* --------------------------------------------------------------
+  * ColorTheme variable calls
+-------------------------------------------------------------- */
+body {
   color: $theme.textColor;
-}
-::-webkit-input-placeholder {
-  color: $theme.textSecondaryColor !important;
-}
-:-moz-placeholder {
-  color: $theme.textSecondaryColor !important;
-}
-:-ms-placeholder {
-  color: $theme.textSecondaryColor !important;
-}
-/* For browsers that don't support the placeholder attribute. */
-input[type="text"].empty {
-  color: $theme.textSecondaryColor !important;
-}
-/* Duplicated because IE6 chokes on the first two selectors. Don't recombine! */
-textarea, select {
-  background-color: $theme.pageContentBackgroundColor;
-  #css3_backgroundLinearGradient({
-     'to': 'bottom',
-     'colors': [
-      {'color': $theme.fieldGradientColor, 'position': '1px'},
-      {'color': $theme.pageContentBackgroundColor, 'position': '8px'}
-    ]
-  })
-  border: 1px solid $theme.borderColor;
-  border-radius: 3px 3px 3px 3px;
-  box-shadow: 0px 1px 2px $theme.borderColor;
-  color: $theme.textColor;
-}
-textarea {
-  max-width: 100%; /* Prevent resizing beyond the visible area in modern browsers */
-}
-input, textarea {
-  #css3_boxSizing('border-box')
-  padding: .3em;
-}
-/* IE7 will shrink floated textareas continuously if we set a max-width,
-   since 100% max-width is computed within the border, while the current width includes the border.
-   Disable it since anyway it doesn't support native textarea resizing. */
-*+html textarea {
-  max-width: none;
 }
 
-/* -----------------------Tables-------------------------*/
+a {
+  color: $theme.linkColor;
+}
+
+h1, h2, h3, h4 , h5, h6 {
+  border-bottom: 1px dotted $theme.borderColor;
+  color: $theme.titleColor;
+}
+
+blockquote {
+  background-color: $theme.backgroundSecondaryColor;
+  border-left-color: $theme.borderColor;
+}
+
 table {
-  border-collapse: collapse;
-  vertical-align: middle;
-}
-thead, tbody, tfoot {
-  /* Override default browser styles. */
-  vertical-align: inherit;
-}
-
-caption, th, td {
-  font-size: 1em;
+  margin: 1em 0;
 }
 
 th {
   background-color: $theme.backgroundSecondaryColor;
-  font-weight: 700;
 }
 
-table pre {
-  white-space: pre-wrap;
+/* @group FORM */
+/* --------------------------------------------------------------
+  * Styles form elements even if they are missing Bootstrap associated classes
+-------------------------------------------------------------- */
+textarea, select, input[type="text"], input[type="password"] {
+  background-color: $theme.pageContentBackgroundColor;
+  #css3_backgroundLinearGradient({
+     'to': 'bottom',
+     'colors': [
+      {'color': $theme.fieldGradientColor, 'position': '1px'},
+      {'color': $theme.pageContentBackgroundColor, 'position': '8px'}
+    ]
+  })
+  border: 1px solid $theme.borderColor;
+  border-radius: 4px;
+  box-shadow: 0px 1px 2px $theme.borderColor;
+  color: $theme.textColor;
+}
+
+input, textarea {
+  #css3_boxSizing('border-box')
+  padding: .3em;
+}
+
+textarea {
+  max-width: 100%; /* Prevent resizing beyond the visible area in modern browsers */
+}
+
+/* --------------------Placeholders----------------------*/
+::-webkit-input-placeholder {
+  color: $theme.textSecondaryColor !important;
+}
+
+:-moz-placeholder {
+  color: $theme.textSecondaryColor !important;
+}
+
+:-ms-placeholder {
+  color: $theme.textSecondaryColor !important;
+}
+
+/* For browsers that don't support the placeholder attribute. */
+input[type="text"].empty {
+  color: $theme.textSecondaryColor !important;
 }
 
 /* @group XWIKI */
 /* --------------------------------------------------------------
   * XWiki Specific classes
 -------------------------------------------------------------- */
+/* -----------------------Verbatim-------------------------*/
 tt.wikimodel-verbatim {
   font-family: sans-serif;
   white-space: pre-wrap;
 }
+
 /* Reset for verbatim inside monospace */
 tt .wikimodel-verbatim {
   font-family: monospace;
 }
 
 /* -----------------------Tables-------------------------*/
+/* TODO: Move from Colibri */
+/* Example: History */
 .xwikidatatable {
-  width: 99%;
-}
-
-.main table {
-  margin: 1em 1px;
+  width: 100%;
 }
 
 .main th, .main td,
 .wiki-table th, .wiki-table td {
-  border: 1px solid $theme.borderColor;
-  padding: 3px 4px;
+  border-top: 1px solid $theme.borderColor;
+  padding: 8px;
 }
 
 /* -----------------Non Existing Links-------------------*/
-/* xwiki/2.0 create links */
 span.wikicreatelink a {
+  padding-right: 1em;
+  position: relative;
   text-decoration: underline;
 }
+
+/* Round question mark with inverse colors */
 span.wikicreatelink a:after {
-  /* Let's make a nice rounded question mark */
+  background-color: $theme.linkColor;
+  /* 1.2em is the standard line height */
+  border-radius: 1.2em;
+  color: $theme.pageContentBackgroundColor;
   content: "?";
-  text-decoration: none;
-  font-size: 80%;
-  font-weight: 900;
-  /* Contrast with the link text */
-  color: $theme.pageContentBackgroundColor;
-  background-color: $theme.linkColor;
-  /* Leave a bit of distance from the text */
-  margin-left: 0.1em;
-  /* Make it round */
+  font-size: 75%;
+  font-weight: 700;
+  line-height: 1.2em;
   padding: 0 0.3em;
-  /* 1.2em is the standard line height */
-  border-radius: 1.2em;
-  /* Raise the box with the standard text depth, so that it sits right on the line */
-  vertical-align: 0.2em;
-}
-/* xwiki/1.0 create links */
-.wikicreatelinktext {
-  text-decoration: underline;
+  position: absolute;
+  right: 0;
+  top: 0.2em;
 }
 
-.wikicreatelinkqm {
-  font-size: 80%;
-  font-weight: 900;
-  /* Contrast with the link text */
-  color: $theme.pageContentBackgroundColor;
-  background-color: $theme.linkColor;
-  /* Leave a bit of distance from the text */
-  margin-left: 0.1em;
-  /* Make it round */
-  padding: 0 0.3em;
-  /* 1.2em is the standard line height */
-  border-radius: 1.2em;
-}
-
-/* ---------------------Lists----------------------------*/
-.main ol, .main ul {
-  line-height: 1.4em;
-  margin: 1em 0 1em 2em;
-}
-.main ol *, .main ul * {
-  line-height: 1.4em;
-}
-.main ol ol, .main ul ul {
-  margin-bottom: 0;
-  margin-top: 0;
-}
-
-/* ---------------------Headers--------------------------*/
+/* -------------------Edit Section-----------------------*/
 .edit_section {
   display: block;
-  height: 24px;
-  line-height: 24px;
-  margin: -19px 0 0;
+  /* Size of the image */
+  height: 20px;
+  /* The value of the <H> bottom margin */
+  margin: -10px 0 0;
   overflow: hidden;
   position: relative;
-  visibility:hidden;
 }
 
 .edit_section a, .edit_section span {
   background: transparent url("$xwiki.getSkinFile('icons/xwiki/edit-section.png')") no-repeat left top;
-  height: 20px;
-  margin: 0;
-  overflow: hidden;
-  padding: 0;
   position: absolute;
   right: 0;
   text-indent: -1000em;
-  top: 0;
-  visibility:visible;
+  visibility: visible;
   width: 20px;
 }
 
 /* -----------------General Elements---------------------*/
-.clearfloats {
-  clear: both;
-  height: 1px;
-  margin: -1px 220px 0;
-  overflow: hidden;
+/* DEPRECATED: Duplicate of .clearfix from Bootstrap */
+.clearfloats:after, .clearfloats:before {
+  content: " ";
+  display: table;
 }
 
+.clearfloats:after {
+  clear: both;
+}
+
+/* DEPRECATED: Duplicate of .hide from Bootstrap */
 .hidden {
   display: none !important;
 }
 
+/* DEPRECATED: Duplicate of .invisible from Bootstrap */
 .invisible {
   visibility: hidden !important;
 }
@@ -355,43 +224,40 @@ span.wikicreatelink a:after {
   color: $theme.textSecondaryColor;
 }
 
+/* ---------------------Columns--------------------------*/
+/* DEPRECATED: Duplicate of the grid system from Bootstrap */
 .column {
   float: left;
 }
+
 .full {
-  /* Leave a bit of space for borders. */
-  width: 99.8%;
-}
-.half {
-  /* Rounding errors with 50%, might end up with one more pixel which pushes the column down. */
-  width: 49.9%;
-}
-.third {
-  /* Rounding errors with 33.3%, might end up with one more pixel which pushes the column down. */
-  width: 33.2%;
+  width: 100%;
 }
 
+.half {
+  width: 50%;
+}
+
+.third {
+  width: 33.33%;
+}
+
+/* ---------------------Avatars--------------------------*/
 .avatar_30 {
   max-width: 30px;
   max-height: 30px;
 }
-* html .avatar_30 {
-  width: 30px;
-}
+
 .avatar_50 {
   max-width: 50px;
   max-height: 50px;
 }
-* html .avatar_50 {
-  width: 50px;
-}
+
 .avatar_120 {
   max-width: 120px;
   max-height: 120px;
 }
-* html .avatar_120 {
-  width: 120px;
-}
+
 th.avatar {
   width: 50px;
 }
