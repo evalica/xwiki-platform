@@ -6,3 +6,25 @@
 #body {
   background: $theme.pageBackgroundColor $!{theme.pageBackgroundImage} $!{theme.pageBackgroundPosition};
 }
+
+/* @group LAYOUT - VIEW */
+/* --------------------------------------------------------------
+  * Layout elements in view mode
+-------------------------------------------------------------- */
+.xwikiintracontent legend {
+  border: none;
+  margin: 0;
+}
+
+/* Bad usage of a class that has meaning inside Bootstrap */
+/* Example: History table */
+.xwikidatatable .row:after, .xwikidatatable .row:before {
+  display: none;
+}
+
+/* Bad usage of a class that has meaning inside Bootstrap */
+/* Example: History table */
+.paginationFilter .pagination {
+  margin-bottom: inherit;
+  margin-top: inherit;
+}
