@@ -1634,14 +1634,15 @@ h1.xwikipaneltitle {
   * Different classes with specific use
 -------------------------------------------------------------- */
 /* --------------XWiki items types list -----------------*/
+/* Space Gadget */
 ul.xlist {
-  margin: 0 0 0 .5em !important;
+  margin: 0 0 0 .5em;
   overflow: hidden;
-  padding: 0 !important;
+  padding: 0;
 }
 
 ul.xlist li.xunderline {
-  border-bottom: solid 1px $theme.borderColor !important;
+  border-bottom: solid 1px $theme.borderColor;
 }
 
 ul.xlist li.xhighlight:hover {
@@ -1650,10 +1651,8 @@ ul.xlist li.xhighlight:hover {
 
 ul.xlist li {
   float: right;
-  height: 100%;
-  list-style-type: none;
   padding: .1em 0;
-  width: 100% !important;
+  width: 100%;
 }
 
 ul.xlist li.space, ul.xlist li.page, ul.xlist li.comment, ul.xlist li.attachment {
@@ -1685,16 +1684,12 @@ ul.xlist li.create a {
   padding-left: 1.5em;
 }
 
-ul.xlist li.xitem div.xitemcontainer {
+ul.xlist li.xitem .xitemcontainer {
   text-indent: 1.5em;
 }
 
-ul.xlist li.xitem div.xitemcontainer ul.xlist {
+ul.xlist li.xitem .xitemcontainer ul.xlist {
   text-indent: 0;
-}
-
-.xspacer {
-  display: none;
 }
 
 /* -----------------------Boxes--------------------------*/
