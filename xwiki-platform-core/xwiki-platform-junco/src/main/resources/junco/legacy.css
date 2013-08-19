@@ -560,11 +560,12 @@ ul.xwikitabbar {
 
 /* @group EDIT LAYOUT  */
 /* --------------------------------------------------------------
-  *  Layout elements for Colibri skin in edit mode
+  *  Layout elements for Junco skin in edit mode
 -------------------------------------------------------------- */
 .alleditcontent {
   margin: 0 25px 25px 20px;
 }
+
 .editor-wiki .alleditcontent, .editor-wysiwyg .alleditcontent {
   margin-right: 225px;
 }
@@ -579,12 +580,11 @@ ul.xwikitabbar {
 }
 
 #xwikidoctitleinput, .alleditcontent #parentinput input {
-  width: 99.8%;
+  width: 100%;
 }
 
 .inlinebody #hierarchy, .editbody #hierarchy {
   display: inline-block;
-  border-right: 1px solid $theme.pageContentBackgroundColor; /* Fixes an IE8 layout issue */
 }
 
 /* "Edit parent" icon */
@@ -592,10 +592,12 @@ ul.xwikitabbar {
   display: inline-block;
   vertical-align: middle;
 }
+
 #mainEditArea:target #hierarchy, #mainEditArea:target .edit-meta-tools,
 #mainContentArea:target #hierarchy, #mainContentArea:target .edit-meta-tools {
   display: none;
 }
+
 .edit-meta-tools a {
   display: block;
   width: 16px;
@@ -605,9 +607,11 @@ ul.xwikitabbar {
   background: transparent none left top no-repeat;
   margin-left: 4px;
 }
+
 .edit-meta-tools a.edit-parent {
   background-image: url("$xwiki.getSkinFile('icons/xwiki/parent_edit.gif')");
 }
+
 .edit-meta-tools a.hide-edit-parent {
   background-image: url("$xwiki.getSkinFile('icons/silk/chart_organisation.png')");
 }
@@ -620,23 +624,18 @@ ul.xwikitabbar {
   margin: 0 -12px 8px -12px;
   font-size: 90%;
 }
-/* Don't combine the following two rules, otherwise IE will fail to recognize either of them */
-#mainEditArea:target #parentinput, #mainContentArea:target #parentinput {
+
+#mainEditArea:target #parentinput, #mainContentArea:target #parentinput,
+#mainEditArea #parentinput.active, #mainContentArea #parentinput.active  {
   display: block;
 }
-#mainEditArea #parentinput.active, #mainContentArea #parentinput.active {
-  display: block;
-}
+
 #parentinput label {
   margin: 0;
 }
+
 #parentinput input {
   color: $theme.linkColor;
-}
-
-.inlinebody dt {
-  font-size: .85em;
-  text-transform: uppercase;
 }
 
 /* @group EDITORS  */
@@ -657,45 +656,12 @@ ul.xwikitabbar {
   border: 1px solid $theme.borderColor;
 }
 
-#xwikieditcontentinner textarea#content {
+#xwikieditcontentinner #content {
   border: 0;
-  padding: 0;
   width: 100%;
 }
 
-/* --------------Old WYSYWYG Editor----------------------*/
-/* Should be in editor_ui.css */
-iframe.mceEditorIframe, .mceEditor {
-  width: 100% !important;
-}
-
-.mceEditor td {
-  padding:0;
-}
-
-.mceEditorContainer {
-  display: block;
-  height: 100% !important;
-  position: relative;
-  width: 100%;
-}
-
-#body.mceContentBody {
-  background: $theme.pageContentBackgroundColor;
-  min-width: 100px;
-}
-
-/* ----------------New WYSYWYG Editor--------------------*/
-/* Should be in Wysiwyg.css */
-table.xRichTextEditorTabPanel td {
-  background-color: $theme.pageContentBackgroundColor;
-}
-
-/* Should be in RichTextArea.css - for table resizing */
-#body.main table {
-  margin: 0;
-}
-
+/* ----------------------Other---------------------------*/
 .wikimodel-emptyline {
   height: 1em;
 }
@@ -725,19 +691,6 @@ table.xRichTextEditorTabPanel td {
   color: $theme.titleColor;
   font-size: 1.1em;
   font-weight: 400;
-}
-
-div.xobject-content dt, div.xproperty-content dt{
-  margin: 0;
-}
-
-/* For TagClass */
-div#xwikiobjects input[type="checkbox"], div#xwikiclassproperties input[type="checkbox"] {
-  width: auto;
-}
-
-.xwiki-form-listclass {
-  display: block;
 }
 
 /* @group MENU */
