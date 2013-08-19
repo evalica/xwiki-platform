@@ -1055,45 +1055,37 @@ ul.xwikitabbar {
 .xform h2, .xform legend {
   border-bottom: 1px dotted $theme.borderColor;
   color: $theme.titleColor;
-  display: block;
   font-size: 1.2em;
   font-weight: 900;
   line-height: 1.2em;
-  overflow: hidden;
-  width: 100%;
 }
+
 .xform h2 {
   margin: 2em 0 0;
-}
-/* Legend elements have an intrinsic 8px left padding; compensate that by a negative left margin */
-* html .xform legend {
-  margin-left: -8px;
-}
-*+html .xform legend {
-  margin-left: -8px;
 }
 
 .xform fieldset {
   margin: 2em 0;
 }
+
 .xform fieldset:first-of-type {
   margin-top: 1em;
 }
+
 .xform fieldset:last-of-type {
   margin-bottom: 1em;
 }
 
-.xform input[type="text"], .xform input[type="password"] {
-  width: 99%;
+.xform input[type="text"], .xform input[type="password"], 
+.xform select, .xform textarea {
+  width: 100%;
 }
+
 .xform label input[type=checkbox], .xform label input[type=radio] {
   margin: 0 0.2em 0 0;
   vertical-align: text-bottom;
 }
-/* Duplicated because IE6 chokes on the first two selectors. Don't recombine! */
-.xform select, .xform textarea {
-  width: 99%;
-}
+
 .xform textarea {
   resize: vertical;
 }
@@ -1124,7 +1116,7 @@ ul.xwikitabbar {
   color: $theme.textSecondaryColor;
   font-size: .9em;
   font-style: italic;
-  font-weight: normal;
+  font-weight: 400;
   margin-left: 1ex;
   text-transform: none;
 }
@@ -1133,7 +1125,6 @@ ul.xwikitabbar {
   color: $theme.textSecondaryColor;
   display: block;
   font-size: .8em;
-  font-style: normal;
   font-weight: 400;
   margin-bottom: .3em;
 }
@@ -1154,7 +1145,7 @@ ul.xwikitabbar {
   color: $theme.notificationErrorColor;
   display: block;
   font-size: .8em;
-  font-weight: normal;
+  font-weight: 400;
   margin-bottom: .3em;
 }
 
@@ -1174,9 +1165,11 @@ ul.xwikitabbar {
   display: inline;
   margin: 5px 5px 0 0;
 }
+
 .buttonwrapper .button {
   vertical-align: middle;
 }
+
 input.button, .buttonwrapper button, .buttonwrapper a:visited, .buttonwrapper a:link, .buttonwrapper a:active {
   background-color: $theme.buttonPrimaryBackgroundColor;
   background-image: none;
@@ -1245,15 +1238,19 @@ input.icon-button {
   text-indent: -9999px;
   width: 16px;
 }
+
 .icon-button.add-button {
   background-image: url("$xwiki.getSkinFile('icons/silk/add.png')");
 }
+
 .icon-button.remove-button {
   background-image: url("$xwiki.getSkinFile('icons/silk/cross.png')");
 }
+
 .icon-button.accept-button {
   background-image: url("$xwiki.getSkinFile('icons/silk/accept.png')");
 }
+
 .icon-button.search-button {
   background-image: url("$xwiki.getSkinFile('icons/xwiki/search.png')");
 }
