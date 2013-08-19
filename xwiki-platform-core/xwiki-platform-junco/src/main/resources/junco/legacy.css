@@ -229,6 +229,10 @@ span.wikicreatelink a:after {
   font-size: .9em;
 }
 
+.centered {
+  text-align: center;
+}
+
 /* ---------------------Columns--------------------------*/
 /* DEPRECATED: Duplicate of the grid system from Bootstrap */
 .column {
@@ -1696,7 +1700,6 @@ ul.xlist li.xitem .xitemcontainer ul.xlist {
 .box {
   margin: 1em 0;
   overflow: auto;
-  padding: 0 1px;
 }
 
 .box>*:first-child {
@@ -1748,47 +1751,31 @@ ul.xlist li.xitem .xitemcontainer ul.xlist {
   color: $theme.notificationSuccessColor;
 }
 
-.messagetype {
-  display: none;
-}
-
-/* -----------------Message Boxes------------------------*/
-div.floatinginfobox {
+.floatinginfobox {
   background-color: $theme.backgroundSecondaryColor;
   float: right;
   margin: .66em 0 1em 1em;
   padding: 10px;
 }
 
+/* Delete, Copy action message */
 fieldset.xwikimessage {
   background-color: $theme.backgroundSecondaryColor;
   display: inline-block;
   margin: 5em auto;
   padding: 1.5em 2em;
   text-align: left;
-  width: auto;
 }
 
 fieldset.xwikimessage legend {
-  background-color: $theme.backgroundSecondaryColor; /* Opera */
   color: $theme.titleColor;
-  display: inline;
   float: left;
-  font: 700 1.4em sans-serif;
   letter-spacing: .4em;
-  margin: 0;
-  padding: 0;
-  text-align: left;
-  white-space: normal;
-  width: 100%;
 }
 
-table.xwikilogintable td, table.xwikilogintable th {
-  border: 0;
-  padding: 3px 4px;
-}
-
+/* Login form and Delete table */
 .xwikimessage table th, .xwikimessage table td {
+  border: 0;
   padding: 3px 4px;
   white-space: nowrap;
 }
@@ -1797,13 +1784,6 @@ table.xwikilogintable td, table.xwikilogintable th {
   border-bottom: 1px solid $theme.borderColor;
   font-size: .85em;
   text-transform: uppercase;
-}
-
-fieldset.xwikimessage .xwikimessage {
-  clear: both;
-  font-size: 110%;
-  font-weight: 700;
-  text-align: left;
 }
 
 /* ----------------- Accordion -----------------------*/
