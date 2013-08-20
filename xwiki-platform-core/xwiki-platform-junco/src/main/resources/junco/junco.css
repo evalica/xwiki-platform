@@ -28,3 +28,12 @@
   margin-bottom: inherit;
   margin-top: inherit;
 }
+
+/* Bad usage of a class that has meaning inside Bootstrap */
+/* Example: User Profile */
+.user-page-pane .label {
+  display: inherit;
+  font-size: inherit;
+  padding: inherit;
+  text-align: inherit;
+}

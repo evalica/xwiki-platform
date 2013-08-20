@@ -33,7 +33,7 @@ h6 {
   font-size: 1.1em;
 }
 
-/* We use lists for content in panels, vertical-menus, etc. */
+/* Used by: Content in panels, vertical-menus, etc. */
 ul, ol {
   padding: 0;
   margin-left: 2em;
@@ -136,12 +136,6 @@ tt .wikimodel-verbatim {
 }
 
 /* -----------------------Tables-------------------------*/
-/* TODO: Move from Colibri */
-/* Example: History */
-.xwikidatatable {
-  width: 100%;
-}
-
 .main th, .main td,
 .wiki-table th, .wiki-table td {
   border-top: 1px solid $theme.borderColor;
@@ -278,7 +272,7 @@ th.avatar {
 /* ----------------------Header--------------------------*/
 #headerglobal {
   background: $theme.pageHeaderBackgroundColor $!{theme.headerBackgroundImage} $!{theme.headerBackgroundPosition};
-  margin-bottom: 16px; /* TODO */
+  margin-bottom: 16px; /* TODO: Adjust values */
 }
 
 #companylogo a img {
@@ -287,7 +281,7 @@ th.avatar {
 
 #globallinks {
   float: right;
-  padding: 8px 20px; /* TODO */
+  padding: 8px 20px; /* TODO: Adjust values */
 }
 
 .globalsearch input {
@@ -295,7 +289,7 @@ th.avatar {
 }
 
 .globalsearchinput {
-  width: 168px; /* TODO */
+  width: 168px; /* TODO: Adjust values */
 }
 
 .globalsearch input.button , .globalsearch input.button:hover{
@@ -308,7 +302,7 @@ th.avatar {
 
 #headerlanguages {
   display: block;
-  padding-top: 4px; /* TODO */
+  padding-top: 4px; /* TODO: Adjust values */
   text-align: right;
 }
 
@@ -317,8 +311,8 @@ th.avatar {
   border-radius: 4px;
   color: $theme.menuLinkColor;
   display: inline-block;
-  margin: 2px; /* TODO */
-  padding: 2px 4px; /* TODO */
+  margin: 2px; /* TODO: Adjust values */
+  padding: 2px 4px; /* TODO: Adjust values */
 }
 
 .language-current {
@@ -337,7 +331,7 @@ th.avatar {
   width: 100%;
 }
 
-/* TODO */
+/* TODO: Adjust values */
 .main {
   margin: 0 200px;
   padding: 0 25px 25px;
@@ -454,6 +448,10 @@ ul.xwikitabbar {
 }
 
 /* ----------------History----------------*/
+#historyform table {
+  width: 100%;
+}
+
 #historyform .currentversion td {
   background-color: $theme.highlightColor;
 }
@@ -643,7 +641,7 @@ ul.xwikitabbar {
   * These classes should be moved in proper editor css files
 -------------------------------------------------------------- */
 /* --------------------Wiki Editor-----------------------*/
-.leftmenu2 { /* TODO rename */
+.leftmenu2 { /* TODO: Rename */
   background-color: #f0f0ee;
   padding: 2px;
 }
@@ -686,7 +684,7 @@ ul.xwikitabbar {
 }
 
 /* ----------------Objects Editor------------------------*/
-/* Should be in dataeditors.css - added dt, div */
+/* TODO: Move - Should be in dataeditors.css - added dt, div */
 #body #xwikiobjects dt label, #body #xwikiclassproperties dt label {
   color: $theme.titleColor;
   font-size: 1.1em;
@@ -1653,7 +1651,7 @@ h1.xwikipaneltitle {
   * Different classes with specific use
 -------------------------------------------------------------- */
 /* --------------XWiki items types list -----------------*/
-/* Space Gadget */
+/* Used by: Space Gadget, Information Tab */
 ul.xlist {
   margin: 0 0 0 .5em;
   overflow: hidden;
@@ -1766,6 +1764,12 @@ ul.xlist li.xitem .xitemcontainer ul.xlist {
   color: $theme.notificationSuccessColor;
 }
 
+span.errormessage, span.warningmessage, span.infomessage, span.plainmessage {
+  background-position: 2px center;
+  overflow: visible;
+  padding: 0 2px 0 22px;
+}
+
 .floatinginfobox {
   background-color: $theme.backgroundSecondaryColor;
   float: right;
@@ -1773,7 +1777,7 @@ ul.xlist li.xitem .xitemcontainer ul.xlist {
   padding: 10px;
 }
 
-/* Delete, Copy action message */
+/* Used by: Delete, Copy action message */
 fieldset.xwikimessage {
   background-color: $theme.backgroundSecondaryColor;
   display: inline-block;
@@ -1788,7 +1792,7 @@ fieldset.xwikimessage legend {
   letter-spacing: .4em;
 }
 
-/* Login form and Delete table */
+/* Used by: Login form and Delete table */
 .xwikimessage table th, .xwikimessage table td {
   border: 0;
   padding: 3px 4px;
@@ -1825,14 +1829,6 @@ fieldset.xwikimessage legend {
 /* --------------------------------------------------------------
   * Different classes for specific macro usage
 -------------------------------------------------------------- */
-
-/* ----------------Message Macro-------------------------*/
-span.errormessage, span.warningmessage, span.infomessage, span.plainmessage {
-  background-position: 2px center;
-  overflow: visible;
-  padding: 0 2px 0 22px;
-}
-
 /* -----------------Footnote Macro-----------------------*/
 ol.footnotes {
   border-top: 1px solid $theme.borderColor;
