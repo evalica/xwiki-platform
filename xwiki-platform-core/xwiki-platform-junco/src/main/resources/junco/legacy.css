@@ -1833,49 +1833,12 @@ fieldset.xwikimessage legend {
 ol.footnotes {
   border-top: 1px solid $theme.borderColor;
   font-size: 80%;
-  margin: 10px 0;
   padding: 1em;
-}
-
-.footnotes li {
-  padding: 0 4px;
 }
 
 .footnoteRef:target, .footnotes *:target {
   background-color: $theme.highlightColor;
   border: 1px dotted;
-}
-
-/* --------------Code Macro syntax 1.0-------------------*/
-.java-keyword, .java-object, .xml-tag, .sql-keyword {
-  color: #00A;
-}
-
-.java-quote {
-  color: #0A0;
-}
-
-/* ------------------Image Macro-------------------------*/
-.imgfloatleft {
-  float: left;
-  margin-right: 1em;
-}
-
-.imgfloatright {
-  float: right;
-  margin-left: 1em;
-}
-
-.imgleft {
-  text-align: left;
-}
-
-.imgcenter {
-  text-align: center;
-}
-
-.imgright {
-  text-align: right;
 }
 
 /* --------------------RSS Macro-------------------------*/
@@ -1901,95 +1864,9 @@ but still maintain the 300 px width when used as a Macro from the WYSIWYG Editor
 }
 
 .rsschanneltitle span a img {
-  margin-left:5px;
+  margin-left: 5px;
 }
 
 .rssfeed .rssitem {
   padding: 5px;
-}
-
-/* @group PROFILE */
-/* --------------------------------------------------------------
-  * These classes should be moved in XWikiUserSheet ssx
--------------------------------------------------------------- */
-.specialmenu {
-  background-color: $theme.backgroundSecondaryColor;
-  padding: 3px;
-  text-align: center;
-}
-
-.specialmenu img {
-  vertical-align: middle;
-}
-
-.specialmenu ul {
-  display: inline;
-  margin: 0;
-  padding: 5px 0;
-}
-
-.specialmenu ul li {
-  display: inline;
-  list-style-type: none;
-}
-
-.xwikiuserblog {
-  float: right;
-  padding: 5px;
-}
-
-/* @group ADMINISTRATION */
-/* --------------------------------------------------------------
-  * These classes should be moved in AdminSheet ssx
--------------------------------------------------------------- */
-/* Overwrites AdminSheet ssx */
-#admin-page-content fieldset p label {
-  text-align: left;
-}
-
-/* Overwrites AdminSheet ssx */
-#contentcolumn #admin-page-header {
-  background-color: $theme.panelCollapsedBackgroundColor ;
-}
-
-/* Overwrites AdminSheet ssx */
-#contentcolumn #admin-page-content {
-  background-color: $theme.pageContentBackgroundColor;
-  padding: 0;
-}
-
-#addNewMember table {
-  border-collapse: separate;
-}
-
-/* @group BLOG  */
-/* --------------------------------------------------------------
-  * These classes should be moved in BlogStyle ssx file
--------------------------------------------------------------- */
-input#tags {
-  width: 99.8%;
-}
-
-/* @group OTHER  */
-/* --------------------------------------------------------------
-  * These classes should be moved in their specific files
--------------------------------------------------------------- */
-
-/* -------------SmartClient tree overrides---------------*/
-#body .listGrid {
-  border: none;
-}
-#XWEWrapper {
-  /* Fix double scrollbar in IE7&8 */
-  overflow: hidden !important;
-}
-
-/* -----------------------YUI Trees----------------------*/
-.ygtvitem table {
-  border: none !important;
-  margin: 0 !important;
-}
-.ygtvitem td {
-  border: none !important;
-  padding: 0 !important;
 }
