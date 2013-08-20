@@ -1233,6 +1233,12 @@ input.secondary:hover, button.secondary:hover, .buttonwrapper a.secondary:hover 
   box-shadow: 0px 2px 2px $theme.borderColor;
 }
 
+*:disabled, input.disabled, button.disabled, .buttonwrapper a.disabled, .edit_section.disabled {
+  opacity: .5;
+  cursor: default;
+}
+
+/* --------------------- Icons --------------------------*/
 /* Small icon buttons */
 input.icon-button {
   background: transparent none center center no-repeat;
@@ -1261,9 +1267,18 @@ input.icon-button {
   background-image: url("$xwiki.getSkinFile('icons/xwiki/search.png')");
 }
 
-*:disabled, input.disabled, button.disabled, .buttonwrapper a.disabled, .edit_section.disabled {
-  opacity: .5;
-  cursor: default;
+/* Decorative icons */
+.icon {
+  vertical-align: middle;
+}
+
+.hasIcon {
+  background: none no-repeat scroll 0 0 transparent;
+  padding-left: 20px;
+}
+
+.iconRSS {
+  background-image: url("$xwiki.getSkinFile('icons/silk/feed.png')");
 }
 
 /* @group VERTICAL MENU */
@@ -1788,8 +1803,7 @@ fieldset.xwikimessage legend {
 
 /* ----------------- Accordion -----------------------*/
 
-/* Note that h6 styling is provided in order to ensure backward compatibility after XSCOLIBRI-160 */
-.accordionTabTitleBar h1, .accordionTabTitleBar h6 {
+.accordionTabTitleBar h1 {
   display:block;
   background: $theme.panelHeaderBackgroundColor url("$xwiki.getSkinFile('icons/xwiki/accordion.png')") no-repeat left;
   border-bottom: 1px solid $theme.borderColor;
@@ -1805,72 +1819,6 @@ fieldset.xwikimessage legend {
   background: $theme.backgroundSecondaryColor;
   overflow: auto;
   padding: 5px;
-}
-
-/* -----------------Content Panels-----------------------*/
-
-div.panellayoutcontainer-1col .panellayoutcol {
-  width: 100%;
-}
-
-div.panellayoutcontainer-2col .panellayoutcol {
-  width: 49%;
-}
-
-div.panellayoutcontainer-3col .panellayoutcol {
-  width: 33%;
-}
-
-div.panellayoutcontainer-4col .panellayoutcol {
-  width: 24%;
-}
-
-div.panellayoutcontainer-5col .panellayoutcol {
-  width: 19%;
-}
-
-div.panellayoutcontainer-1col, div.panellayoutcontainer-2col, div.panellayoutcontainer-3col, div.panellayoutcontainer-4col, div.panellayoutcontainer-5col {
-  clear: left;
-  overflow: auto;
-}
-
-.panellayoutcol {
-  float: left;
-  height: 1%;
-}
-
-.panellayoutcol .panel {
-  border: 1px solid $theme.borderColor;
-  margin: 0 0 5% 5%;
-  overflow-x: auto;
-  width: 90%;
-}
-
-#xwikicontent .panel ul {
-  list-style-position: inside;
-  margin: 0 5px;
-  padding: 0;
-}
-
-#xwikicontent .panellayoutcol .panel .xwikipanelcontents {
-  background-color: transparent;
-  background-image: none;
-  padding: 10px;
-}
-
-/* --------------------- Icons --------------------------*/
-
-.icon {
-  vertical-align: middle;
-}
-
-.hasIcon {
-  background: none no-repeat scroll 0 0 transparent;
-  padding-left: 20px;
-}
-
-.iconRSS {
-  background-image: url("$xwiki.getSkinFile('icons/silk/feed.png')");
 }
 
 /* @group MACROS */
