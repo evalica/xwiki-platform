@@ -1,7 +1,8 @@
 #template('colorThemeInit.vm')
 /* Redirecting the responsability of background-color to body, because of .container usage  */
 #body {
-  background: $theme.pageBackgroundColor $!{theme.pageBackgroundImage} $!{theme.pageBackgroundPosition};
+  background-image: $!{theme.pageBackgroundImage};
+  background-position: $!{theme.pageBackgroundPosition};
 }
 
 /* Overwriting Bootstrap value */

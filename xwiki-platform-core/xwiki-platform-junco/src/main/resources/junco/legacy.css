@@ -48,19 +48,6 @@ li > dl, dt > dl, dd > dl {
 /* --------------------------------------------------------------
   * ColorTheme variable calls
 -------------------------------------------------------------- */
-body {
-  color: $theme.textColor;
-}
-
-a {
-  color: $theme.linkColor;
-}
-
-h1, h2, h3, h4 , h5, h6 {
-  border-bottom: 1px dotted $theme.borderColor;
-  color: $theme.titleColor;
-}
-
 blockquote {
   background-color: $theme.backgroundSecondaryColor;
   border-left-color: $theme.borderColor;
