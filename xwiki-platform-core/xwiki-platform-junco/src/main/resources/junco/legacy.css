@@ -8,31 +8,6 @@
 /* --------------------------------------------------------------
   * Overwrites the Bootstrap standard values
 -------------------------------------------------------------- */
-/* Font size for Hn is 1.1^(7-n) */
-h1 {
-  font-size: 1.77em;
-}
-
-h2 {
-  font-size: 1.61em;
-}
-
-h3 {
-  font-size: 1.46em;
-}
-
-h4 {
-  font-size: 1.33em;
-}
-
-h5 {
-  font-size: 1.21em;
-}
-
-h6 {
-  font-size: 1.1em;
-}
-
 /* Used by: Content in panels, vertical-menus, etc. */
 ul, ol {
   padding: 0;
