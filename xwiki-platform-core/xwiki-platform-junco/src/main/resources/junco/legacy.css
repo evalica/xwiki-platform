@@ -19,15 +19,6 @@ li > dl, dt > dl, dd > dl {
   margin-left: 2em;
 }
 
-/* @group COLORTHEME */
-/* --------------------------------------------------------------
-  * ColorTheme variable calls
--------------------------------------------------------------- */
-blockquote {
-  background-color: $theme.backgroundSecondaryColor;
-  border-left-color: $theme.borderColor;
-}
-
 table {
   margin: 1em 0;
 }
@@ -161,11 +152,6 @@ span.wikicreatelink a:after {
 /* DEPRECATED: Duplicate of .hide from Bootstrap */
 .hidden {
   display: none !important;
-}
-
-/* DEPRECATED: Duplicate of .invisible from Bootstrap */
-.invisible {
-  visibility: hidden !important;
 }
 
 .loading {
@@ -626,7 +612,6 @@ ul.xwikitabbar {
   width: 100%;
 }
 
-/* ----------------------Other---------------------------*/
 .wikimodel-emptyline {
   height: 1em;
 }
@@ -1695,13 +1680,15 @@ ul.xlist li.xitem .xitemcontainer ul.xlist {
 }
 
 .code, .code pre, .code *  {
-  font-family: courier, "courier new", monospace;
+  font-family: monospace;
   white-space: pre;
 }
 
 /* ----------------------Messages------------------------*/
 .errormessage, .warningmessage, .infomessage, .successmessage, .plainmessage {
-  background: $theme.backgroundSecondaryColor 6px 8px no-repeat;
+  background-color: $theme.backgroundSecondaryColor;
+  background-position: 6px 8px;
+  background-repeat: no-repeat;
   border: 1px dotted $theme.borderColor;
   border-radius: 4px;
   box-shadow: 0 0 7px rgba(0, 0, 0, 0.1) inset;
