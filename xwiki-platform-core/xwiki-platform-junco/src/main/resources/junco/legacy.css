@@ -55,24 +55,6 @@ textarea {
   max-width: 100%; /* Prevent resizing beyond the visible area in modern browsers */
 }
 
-/* --------------------Placeholders----------------------*/
-::-webkit-input-placeholder {
-  color: $theme.textSecondaryColor !important;
-}
-
-:-moz-placeholder {
-  color: $theme.textSecondaryColor !important;
-}
-
-:-ms-placeholder {
-  color: $theme.textSecondaryColor !important;
-}
-
-/* For browsers that don't support the placeholder attribute. */
-input[type="text"].empty {
-  color: $theme.textSecondaryColor !important;
-}
-
 /* @group XWIKI */
 /* --------------------------------------------------------------
   * XWiki Specific classes
@@ -139,16 +121,6 @@ span.wikicreatelink a:after {
 }
 
 /* -----------------General Elements---------------------*/
-/* DEPRECATED: Duplicate of .clearfix from Bootstrap */
-.clearfloats:after, .clearfloats:before {
-  content: " ";
-  display: table;
-}
-
-.clearfloats:after {
-  clear: both;
-}
-
 /* DEPRECATED: Duplicate of .hide from Bootstrap */
 .hidden {
   display: none !important;
