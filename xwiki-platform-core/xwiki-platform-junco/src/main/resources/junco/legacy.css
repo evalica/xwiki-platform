@@ -1098,63 +1098,6 @@ ul.xwikitabbar {
   vertical-align: middle;
 }
 
-input.button, .buttonwrapper button, .buttonwrapper a:visited, .buttonwrapper a:link, .buttonwrapper a:active {
-  background-color: $theme.buttonPrimaryBackgroundColor;
-  background-image: none;
-  #css3_backgroundLinearGradient({
-     'to': 'bottom',
-     'colors': [
-      {'color': $theme.buttonPrimaryGradientColor, 'position': '0%'},
-      {'color': $theme.buttonPrimaryBackgroundColor, 'position': '100%'}
-    ]
-  })
-  border: 1px solid $theme.buttonPrimaryBackgroundColor;
-  border-radius: 3px 3px 3px 3px;
-  color: $theme.buttonPrimaryTextColor;
-  cursor: pointer;
-  display: inline-block;
-  font: normal normal 700 .8em/140% "Helvetica",sans-serif;
-  margin: 0;
-  padding: 2px 3px;
-  #css_textShadow('0', '1px', '0', $theme.buttonPrimaryGradientColor)
-  text-transform: uppercase;
-}
-
-input.button:hover, .buttonwrapper button:hover, .buttonwrapper a:hover{
-  background-color: $theme.buttonPrimaryBackgroundColor;
-  #css3_backgroundLinearGradient({
-     'to': 'bottom',
-     'colors': [
-      {'color': $theme.buttonPrimaryBackgroundColor, 'position': '0%'},
-      {'color': $theme.buttonPrimaryGradientColor, 'position': '100%'}
-    ]
-  })
-  box-shadow: 0px 2px 2px $theme.borderColor;
-  color: $theme.buttonPrimaryTextColor;
-  text-decoration: none;
-}
-
-.buttonwrapper input.secondary, .buttonwrapper button.secondary, .buttonwrapper a.secondary,
-.buttonwrapper a.secondary:link, .buttonwrapper a.secondary:visited,
-.buttonwrapper a.secondary:active /* Needed for IE6 */ {
-  background-color: $theme.buttonSecondaryBackgroundColor;
-  #css3_backgroundLinearGradient({
-     'to': 'bottom',
-     'colors': [
-      {'color': $theme.buttonSecondaryGradientColor, 'position': '0%'},
-      {'color': $theme.buttonSecondaryBackgroundColor, 'position': '100%'}
-    ]
-  })
-  border-color: $theme.buttonSecondaryBackgroundColor;
-  border-radius: 3px 3px 3px 3px;
-  color: $theme.buttonSecondaryTextColor;
-  #css_textShadow('0', '1px', '0', $theme.buttonSecondaryGradientColor)
-}
-
-input.secondary:hover, button.secondary:hover, .buttonwrapper a.secondary:hover {
-  box-shadow: 0px 2px 2px $theme.borderColor;
-}
-
 *:disabled, input.disabled, button.disabled, .buttonwrapper a.disabled, .edit_section.disabled {
   opacity: .5;
   cursor: default;

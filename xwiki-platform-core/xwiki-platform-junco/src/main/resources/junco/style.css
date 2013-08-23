@@ -1,4 +1,5 @@
-@import url('//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css');
+/*@import url('//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css');*/
+@import "$xwiki.getSkinFile('themes/colibri/bootstrap.min.css', true)";
 /*@import url('//bootswatch.com/amelia/bootstrap.min.css');*/
 /*@import "$xwiki.getSkinFile('themes/default/bootstrap.min.css', true)";*/
 @import "$xwiki.getSkinFile('legacy.css', true)#if ("$!{request.colorTheme}" != '')?colorTheme=${request.colorTheme}#end";
