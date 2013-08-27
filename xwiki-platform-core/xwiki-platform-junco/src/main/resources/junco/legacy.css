@@ -121,30 +121,8 @@ span.wikicreatelink a:after {
 }
 
 /* -----------------General Elements---------------------*/
-/* DEPRECATED: Duplicate of .hide from Bootstrap */
-.hidden {
-  display: none !important;
-}
-
 .loading {
   background: transparent url("$xwiki.getSkinFile('icons/xwiki/spinner.gif')") no-repeat center;
-}
-
-.separator {
-  color: $theme.textSecondaryColor;
-}
-
-.itemCount {
-  color: $theme.textSecondaryColor;
-}
-
-.noitems {
-  color: $theme.textSecondaryColor;
-  font-size: .9em;
-}
-
-.centered {
-  text-align: center;
 }
 
 /* ---------------------Columns--------------------------*/
