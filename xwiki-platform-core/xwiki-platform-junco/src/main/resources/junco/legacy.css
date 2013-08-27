@@ -936,30 +936,9 @@ ul.xwikitabbar {
   margin-bottom: 1em;
 }
 
-.xform input[type="text"], .xform input[type="password"], 
-.xform select, .xform textarea {
-  width: 100%;
-}
-
 .xform label input[type=checkbox], .xform label input[type=radio] {
   margin: 0 0.2em 0 0;
   vertical-align: text-bottom;
-}
-
-.xform textarea {
-  resize: vertical;
-}
-
-.xform dt {
-  margin-top: 1.2em;
-}
-
-.xform dt label, .xformInline label {
-  color: $theme.textColor;
-  font-size: .85em;
-  font-weight: 700;
-  margin-bottom: .3em;
-  text-transform: uppercase;
 }
 
 .xform dt label {
@@ -973,20 +952,9 @@ ul.xwikitabbar {
 }
 
 .xform .xRequired {
-  color: $theme.textSecondaryColor;
-  font-size: .9em;
   font-style: italic;
-  font-weight: 400;
   margin-left: 1ex;
   text-transform: none;
-}
-
-.xform .xHint {
-  color: $theme.textSecondaryColor;
-  display: block;
-  font-size: .8em;
-  font-weight: 400;
-  margin-bottom: .3em;
 }
 
 .xform .xHelp {
@@ -999,22 +967,6 @@ ul.xwikitabbar {
   overflow: hidden;
   text-align: left !important; /* Make sure the text is left-aligned so that the inner box always starts at the top-left corner */
   width: 16px;
-}
-
-.xform .xErrorMsg {
-  color: $theme.notificationErrorColor;
-  display: block;
-  font-size: .8em;
-  font-weight: 400;
-  margin-bottom: .3em;
-}
-
-.xform .xErrorField {
-  border: 1px solid $theme.notificationErrorColor;
-}
-
-.xform .buttons {
-  margin: .8em 0;
 }
 
 /* @group BUTTONS */
