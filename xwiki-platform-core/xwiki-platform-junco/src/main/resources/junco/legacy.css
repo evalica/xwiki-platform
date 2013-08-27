@@ -125,24 +125,6 @@ span.wikicreatelink a:after {
   background: transparent url("$xwiki.getSkinFile('icons/xwiki/spinner.gif')") no-repeat center;
 }
 
-/* ---------------------Columns--------------------------*/
-/* DEPRECATED: Duplicate of the grid system from Bootstrap */
-.column {
-  float: left;
-}
-
-.full {
-  width: 100%;
-}
-
-.half {
-  width: 50%;
-}
-
-.third {
-  width: 33.33%;
-}
-
 /* ---------------------Avatars--------------------------*/
 .avatar_30 {
   max-width: 30px;
