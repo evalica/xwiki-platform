@@ -267,17 +267,14 @@ ul.xwikitabbar {
   display: inline-block;
 }
 
-.xwikitabbar li a, .xwikitabbar li a:visited, .xwikitabbar li a:active{
+.xwikitabbar li a {
   color: $theme.menuLinkColor;
   display: inline-block;
-  font-size: .8em;
-  font-weight: 700;
-  line-height: 20px !important;
+  line-height: 20px;
   padding: 0 10px;
-  text-transform: uppercase;
 }
 
-.xwikitabbar li.active a, .xwikitabbar li.active a:active, .xwikitabbar li.active a:visited {
+.xwikitabbar li.active a {
   background: $theme.pageContentBackgroundColor;
   color: $theme.menuSelectedEntryLinkColor;
   cursor: default;
@@ -287,11 +284,6 @@ ul.xwikitabbar {
 /* ----------------History----------------*/
 #historyform .currentversion td {
   background-color: $theme.highlightColor;
-}
-
-#historyform th {
-  font-size: .8em;
-  text-transform: uppercase;
 }
 
 #historyform td {
@@ -367,23 +359,15 @@ ul.xwikitabbar {
   padding: 0 1em 1em;
 }
 
-#informationcontent dt {
-  font-size: .8em;
-  text-transform: uppercase;
-}
-
 /* ----------------------Footer--------------------------*/
 #footerglobal hr {
   display: none;
 }
 
 #footerglobal {
-  color: $theme.textPrimaryColor;
-  font-size: .7em;
   margin: 0 225px;
   padding: 0 0 25px;
   text-align: center;
-  text-transform: uppercase;
 }
 
 #body.hideleft #footerglobal{
@@ -408,11 +392,7 @@ ul.xwikitabbar {
 
 .alleditcontent label {
   display: block;
-  font-size: .85em;
-  font-weight: 700;
   margin: 10px 0 4px;
-  text-transform: uppercase;
-  color: $theme.textSecondaryColor;
 }
 
 #xwikidoctitleinput, .alleditcontent #parentinput input {
@@ -681,7 +661,7 @@ ul.xwikitabbar {
   margin-bottom: 4px;
 }
 
-.actionmenu .submenuitem a, .actionmenu .submenuitem a:link, .actionmenu .submenuitem a:visited, .actionmenu .submenuitem a:active {
+.actionmenu .submenuitem a {
   float: none;
   font-weight: normal;
   height: auto;
@@ -935,7 +915,6 @@ ul.xwikitabbar {
 .xform .xRequired {
   font-style: italic;
   margin-left: 1ex;
-  text-transform: none;
 }
 
 .xform .xHelp {
@@ -1210,13 +1189,6 @@ h1.xwikipaneltitle {
   margin-left: 2em;
 }
 
-.panel ul li.active {
-  line-height: 1.7em;
-  font-size: 1.2em;
-  font-weight: 700;
-  text-transform: uppercase;
-}
-
 .panel input, .panel select , .panel dt , .panel table, .padded label {
   font-size: .95em;
   margin: 0;
@@ -1226,11 +1198,6 @@ h1.xwikipaneltitle {
 
 .panel dd, .panel .padded {
   padding: 0 0 .5em;
-}
-
-.panel dt, .padded label {
-  font-weight: 700;
-  text-transform: uppercase;
 }
 
 /* @group CONTAINERS GENERAL STYLING */
@@ -1270,7 +1237,7 @@ ul.xwikitabbar {
   border-radius: 4px 4px 4px 4px;
 }
 
-.xwikitabbar li.active a, .xwikitabbar li.active a:active, .xwikitabbar li.active a:visited {
+.xwikitabbar li.active a {
   border-radius: 4px 4px 0 0;
   box-shadow: 0px -1px 1px $theme.borderColor;
 }
@@ -1472,12 +1439,6 @@ fieldset.xwikimessage legend {
   white-space: nowrap;
 }
 
-.xwikimessage th {
-  border-bottom: 1px solid $theme.borderColor;
-  font-size: .85em;
-  text-transform: uppercase;
-}
-
 /* ----------------- Accordion -----------------------*/
 
 .accordionTabTitleBar h1 {
@@ -1486,10 +1447,8 @@ fieldset.xwikimessage legend {
   border-bottom: 1px solid $theme.borderColor;
   border-top: 1px solid $theme.pageContentBackgroundColor;
   color: $theme.panelHeaderTextColor;
-  font: 700 .8em / 1.8em sans-serif;
   margin: 0;
   padding: 4px 21px;
-  text-transform: uppercase;
 }
 
 .accordionTabContentBox {
