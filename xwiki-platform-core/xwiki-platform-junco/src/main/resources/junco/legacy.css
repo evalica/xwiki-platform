@@ -1461,44 +1461,6 @@ ul.xlist li.xitem .xitemcontainer ul.xlist {
 }
 
 /* ----------------------Messages------------------------*/
-.errormessage, .warningmessage, .infomessage, .successmessage, .plainmessage {
-  background-color: $theme.backgroundSecondaryColor;
-  background-position: 6px 8px;
-  background-repeat: no-repeat;
-  border: 1px dotted $theme.borderColor;
-  border-radius: 4px;
-  box-shadow: 0 0 7px rgba(0, 0, 0, 0.1) inset;
-  margin: 4px 0;
-  overflow: auto;
-  padding: 8px 28px;
-  text-align: justify;
-}
-
-.infomessage {
-  background-image: url("$xwiki.getSkinFile('icons/silk/information.png')");
-  color: $theme.notificationInfoColor;
-}
-
-.warningmessage {
-  background-image: url("$xwiki.getSkinFile('icons/silk/error.png')");
-  color: $theme.notificationWarningColor;
-}
-
-.errormessage {
-  background-image: url("$xwiki.getSkinFile('icons/silk/exclamation.png')");
-  color: $theme.notificationErrorColor;
-}
-
-.successmessage {
-  background-image: url("$xwiki.getSkinFile('icons/silk/tick.png')");
-  color: $theme.notificationSuccessColor;
-}
-
-span.errormessage, span.warningmessage, span.infomessage, span.plainmessage {
-  background-position: 2px center;
-  overflow: visible;
-  padding: 0 2px 0 22px;
-}
 
 .floatinginfobox {
   background-color: $theme.backgroundSecondaryColor;
