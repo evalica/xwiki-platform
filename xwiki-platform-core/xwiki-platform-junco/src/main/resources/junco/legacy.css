@@ -19,14 +19,6 @@ li > dl, dt > dl, dd > dl {
   margin-left: 2em;
 }
 
-table {
-  margin: 1em 0;
-}
-
-th {
-  background-color: $theme.backgroundSecondaryColor;
-}
-
 /* @group XWIKI */
 /* --------------------------------------------------------------
   * XWiki Specific classes
@@ -40,13 +32,6 @@ tt.wikimodel-verbatim {
 /* Reset for verbatim inside monospace */
 tt .wikimodel-verbatim {
   font-family: monospace;
-}
-
-/* -----------------------Tables-------------------------*/
-.main th, .main td,
-.wiki-table th, .wiki-table td {
-  border-top: 1px solid $theme.borderColor;
-  padding: 8px;
 }
 
 /* -----------------Non Existing Links-------------------*/
@@ -300,10 +285,6 @@ ul.xwikitabbar {
 }
 
 /* ----------------History----------------*/
-#historyform table {
-  width: 100%;
-}
-
 #historyform .currentversion td {
   background-color: $theme.highlightColor;
 }
