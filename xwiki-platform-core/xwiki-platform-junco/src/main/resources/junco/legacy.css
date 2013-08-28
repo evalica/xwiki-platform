@@ -1460,29 +1460,6 @@ ul.xlist li.xitem .xitemcontainer ul.xlist {
   text-indent: 0;
 }
 
-/* -----------------------Boxes--------------------------*/
-.box {
-  margin: 1em 0;
-  overflow: auto;
-}
-
-.box>*:first-child {
-  margin-top: 0;
-}
-.box>*:last-child {
-  margin-bottom: 0;
-}
-
-.code, .box {
-  background-color: $theme.backgroundSecondaryColor;
-  border: 1px dotted $theme.borderColor;
-}
-
-.code, .code pre, .code *  {
-  font-family: monospace;
-  white-space: pre;
-}
-
 /* ----------------------Messages------------------------*/
 .errormessage, .warningmessage, .infomessage, .successmessage, .plainmessage {
   background-color: $theme.backgroundSecondaryColor;
