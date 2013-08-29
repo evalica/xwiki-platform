@@ -257,26 +257,6 @@ th.avatar {
   letter-spacing: 0.1em;
 }
 
-/* -----------------Tabs------------------*/
-ul.xwikitabbar {
-  margin: 0;
-  padding: 3px 0 0 15px;
-}
-.xwikitabbar li {
-  display: inline-block;
-}
-
-.xwikitabbar li a {
-  display: inline-block;
-  padding: 0 10px;
-}
-
-.xwikitabbar li.active a {
-  background: $theme.pageContentBackgroundColor;
-  cursor: default;
-  text-decoration: none;
-}
-
 /* ----------------History----------------*/
 #historyform .currentversion td {
   background-color: $theme.highlightColor;
