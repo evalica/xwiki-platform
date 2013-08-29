@@ -252,7 +252,6 @@ th.avatar {
 }
 
 .xwikiintracontent legend {
-  color: $theme.titleColor;
   font-size: 1.2em;
   font-weight: 700;
   letter-spacing: 0.1em;
@@ -268,15 +267,12 @@ ul.xwikitabbar {
 }
 
 .xwikitabbar li a {
-  color: $theme.menuLinkColor;
   display: inline-block;
-  line-height: 20px;
   padding: 0 10px;
 }
 
 .xwikitabbar li.active a {
   background: $theme.pageContentBackgroundColor;
-  color: $theme.menuSelectedEntryLinkColor;
   cursor: default;
   text-decoration: none;
 }
@@ -1150,13 +1146,6 @@ h1.xwikipaneltitle {
   * General rules that applied to different types of containers
 -------------------------------------------------------------- */
 /* -------------- Containers borders -----------------*/
-#contentmenu, #editmenu,
-#mainContentArea, #mainEditArea,
-#xdocFooter,
-#docextrapanes, ul.xwikitabbar {
-  border: 1px solid $theme.borderColor;
-}
-
 #docextrapanes {
   box-shadow: 0px -1px 0px $theme.borderColor; /* #docExtraTabs bottom border */
 }
@@ -1169,27 +1158,12 @@ h1.xwikipaneltitle {
   border-width: 1px;
 }
 
-ul.xwikitabbar {
-  border-width: 1px 1px 0;
-}
-
-.xwikipanelcontents, #docextrapanes, #xdocFooter {
-  border-width: 0 1px 1px;
-  border-radius: 0 0 4px 4px;
-}
-
-.collapsed h1.xwikipaneltitle {
-  border-radius: 4px 4px 4px 4px;
-}
-
 .xwikitabbar li.active a {
-  border-radius: 4px 4px 0 0;
   box-shadow: 0px -1px 1px $theme.borderColor;
 }
 
 /* -------------- Containers gradients -----------------*/
 h1.xwikipaneltitle {
-  border-radius: 4px 4px 0 0;
   #css_textShadow('0', '1px', '0', $theme.panelHeaderGradientColor)
 }
 
