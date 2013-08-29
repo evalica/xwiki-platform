@@ -530,7 +530,6 @@ ul.xwikitabbar {
 
 /* General */
 .actionmenu {
-  background-color: $theme.menuBackgroundColor;
   height: 1.6em;
   min-height: 22px;
   width: 100%;
@@ -541,7 +540,6 @@ ul.xwikitabbar {
 }
 
 .actionmenu .submenu {
-  background: $theme.menuBackgroundColor;
   display: block;
   padding: 5px 5px 5px 10px;
   position: absolute;
@@ -574,10 +572,7 @@ ul.xwikitabbar {
 }
 
 .submenu .submenuseparator {
-  border-top: 1px solid $theme.textSecondaryColor;
   display: block;
-  line-height: 1px;
-  margin: 7px 5px 7px 0;
 }
 
 .actionmenu .hasIcon {
@@ -590,30 +585,19 @@ ul.xwikitabbar {
 }
 
 .tmetype {
-  color: $theme.menuLinkColor;
   float: left;
   font: normal normal 700 0.8em/1.8em sans-serif;
   padding: 2px 5px 0 20px;
   text-transform: uppercase;
 }
 
-.menuarrow {
-  color: $theme.menuLinkColor;
-  font-size: .8em;
-  line-height: 1.9em;
-  margin-right: 10px;
-}
-
 .topmenuentry .separator {
   display: inline-block;
-  font-size: .85em;
   line-height: 1.8em;
-  margin: 0 3px 0 -3px;
 }
 
 /* Links */
 .actionmenu a, .actionmenu a:visited {
-  color: $theme.menuLinkColor;
   display: block;
   float: left;
   font: normal normal 700 0.8em/1.8em sans-serif;
@@ -673,14 +657,8 @@ ul.xwikitabbar {
 }
 
 .actionmenu .tmCreate {
-  background-color: $theme.menuAddEntryBackgroundColor;
   margin-right: 2em;
-  padding-left: 10px;
   position: relative;
-}
-
-.actionmenu .tmCreate a.tme, .tmCreate .menuarrow {
-  color: $theme.menuAddEntryLinkColor;
 }
 
 .tmCreate .submenu {
@@ -691,13 +669,6 @@ ul.xwikitabbar {
 .actionmenu .tmCreate {
   background-image: url("$xwiki.getSkinFile('icons/silk/add.png')");
   background-position:  10px 3px;
-  ## We don't use the #css3_backgroundIconAndLinearGradient macro because IE8 will accept the background-image property with multiple images, although it will fail to correctly interpret it
-  #foreach ($prefix in ['-webkit-'])
-    background: url("$xwiki.getSkinFile('icons/silk/add.png')") 10px 3px no-repeat, ${prefix}linear-gradient(to top, rgba(236,236,236,0.3) 0%, rgba(236,236,236,0) 30%, rgba(20,20,20,0) 70%, rgba(20,20,20,0.2) 100%) top $theme.menuAddEntryBackgroundColor;
-  #end
-  #foreach ($prefix in ['-moz-', '-o-', ''])
-    background: url("$xwiki.getSkinFile('icons/silk/add.png')") 10px 3px no-repeat, ${prefix}linear-gradient(bottom, rgba(236,236,236,0.3) 0%, rgba(236,236,236,0) 30%, rgba(20,20,20,0) 70%, rgba(20,20,20,0.2) 100%) top $theme.menuAddEntryBackgroundColor;
-  #end
 }
 
 .actionmenu .tmWiki {
@@ -849,7 +820,6 @@ ul.xwikitabbar {
 }
 .floating-menu:after {
   bottom: 0;
-  color: $theme.buttonSecondaryTextColor;
   background: inherit;
   content: ".......";
   display: block;
@@ -860,7 +830,6 @@ ul.xwikitabbar {
   padding: 0 0 0.1em;
   position: absolute;
   text-align: center;
-  #css_textShadow('0', '1px', '0', $theme.menuContentGradientColor)
   width: 100%;
 }
 
@@ -1220,48 +1189,21 @@ ul.xwikitabbar {
 
 /* -------------- Containers gradients -----------------*/
 h1.xwikipaneltitle {
-  background-color: $theme.panelHeaderBackgroundColor;
-  #css3_backgroundLinearGradient({
-     'to': 'bottom',
-     'colors': [
-      {'color': $theme.panelHeaderGradientColor, 'position': '0%'},
-      {'color': $theme.panelHeaderBackgroundColor, 'position': '100%'}
-    ]
-  })
   border-radius: 4px 4px 0 0;
-  color: $theme.panelHeaderTextColor;
   #css_textShadow('0', '1px', '0', $theme.panelHeaderGradientColor)
 }
 
 .collapsed h1.xwikipaneltitle {
-  background-color: $theme.panelCollapsedBackgroundColor;
-  #css3_backgroundLinearGradient({
-     'to': 'bottom',
-     'colors': [
-      {'color': $theme.panelCollapsedGradientColor, 'position': '0%'},
-      {'color': $theme.panelCollapsedBackgroundColor, 'position': '100%'}
-    ]
-  })
-  color: $theme.panelCollapsedTextColor;
   #css_textShadow('0', '1px', '0', $theme.panelCollapsedGradientColor)
 }
 
 #contentmenu, #editmenu, ul.xwikitabbar {
-  background-color: $theme.menuContentBackgroundColor;
-  #css3_backgroundLinearGradient({
-     'to': 'bottom',
-     'colors': [
-      {'color': $theme.menuContentGradientColor, 'position': '0%'},
-      {'color': $theme.menuContentBackgroundColor, 'position': '100%'}
-    ]
-  })
   border-radius: 4px 4px 0 0;
 }
 
 #contentmenu.actionmenu a, #contentmenu.actionmenu a:visited, #contentmenu .menuarrow, #contentmenu .tmetype,
 #editmenu.actionmenu a, #editmenu.actionmenu a:visited, #editmenu .menuarrow, #editmenu .tmetype,
 .xwikitabbar li a, .xwikitabbar li a:visited, .xwikitabbar li a:active  {
-  color: $theme.menuContentLinkColor;
   #css_textShadow('0', '1px', '0', $theme.menuContentGradientColor)
 }
 
@@ -1270,19 +1212,7 @@ h1.xwikipaneltitle {
   text-shadow: none;
 }
 
-#contentmenu.actionmenu .submenu,
-#editmenu.actionmenu .submenu {
-  background-color: $theme.submenuContentBackgroundColor;
-}
-
 #mainmenu {
-  #css3_backgroundLinearGradient({
-     'to': 'bottom',
-     'colors': [
-      {'color': $theme.menuGradientColor, 'position': '0%'},
-      {'color': $theme.menuBackgroundColor, 'position': '50%'}
-    ]
-  })
   box-shadow: 0px 1px 2px $theme.menuGradientColor;
 }
 
