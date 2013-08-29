@@ -191,7 +191,6 @@ th.avatar {
 }
 
 #mainContentArea, #mainEditArea  {
-  background: $theme.pageContentBackgroundColor;
   overflow: auto;
   padding: 10px 25px;
 }
@@ -227,9 +226,6 @@ th.avatar {
 
 /* ---------------Bottom Doc Information------------------*/
 #xdocFooter {
-  background-color: $theme.pageContentBackgroundColor;
-  color: $theme.textPrimaryColor;
-  font-size: 90%;
   overflow: auto;
   padding: 5px 25px 10px;
   width: auto;
@@ -241,7 +237,6 @@ th.avatar {
 
 /* --------------------Doc Extra Tabs--------------------*/
 #docextrapanes {
-  background-color: $theme.pageContentBackgroundColor;
   overflow: auto;
   padding: 20px 25px 10px;
 }
@@ -445,7 +440,7 @@ th.avatar {
 }
 
 #xwikieditcontentinner {
-  border: 1px solid $theme.borderColor;
+  border: 1px solid #E8E8E8;
 }
 
 #xwikieditcontentinner #content {
@@ -819,8 +814,6 @@ th.avatar {
   * forms components
 -------------------------------------------------------------- */
 .xform h2, .xform legend {
-  border-bottom: 1px dotted $theme.borderColor;
-  color: $theme.titleColor;
   font-size: 1.2em;
   font-weight: 900;
   line-height: 1.2em;
@@ -1091,12 +1084,6 @@ h1.xwikipaneltitle {
   cursor: pointer;
 }
 
-.collapsed h1.xwikipaneltitle {
-  background-color: $theme.panelCollapsedBackgroundColor;
-  border: 0;
-  color: $theme.panelCollapsedTextColor;
-}
-
 .collapsed .xwikipanelcontents {
   display: none;
 }
@@ -1125,84 +1112,18 @@ h1.xwikipaneltitle {
 /* --------------------------------------------------------------
   * General rules that applied to different types of containers
 -------------------------------------------------------------- */
-/* -------------- Containers borders -----------------*/
-#docextrapanes {
-  box-shadow: 0px -1px 0px $theme.borderColor; /* #docExtraTabs bottom border */
-}
-
-#contentmenu, #editmenu {
-  border-width: 1px 0 0;
-}
-
-#mainContentArea, #mainEditArea {
-  border-width: 1px;
-}
-
-.xwikitabbar li.active a {
-  box-shadow: 0px -1px 1px $theme.borderColor;
-}
 
 /* -------------- Containers gradients -----------------*/
 h1.xwikipaneltitle {
   #css_textShadow('0', '1px', '0', $theme.panelHeaderGradientColor)
 }
 
-.collapsed h1.xwikipaneltitle {
-  #css_textShadow('0', '1px', '0', $theme.panelCollapsedGradientColor)
-}
-
-#contentmenu, #editmenu, ul.xwikitabbar {
+#contentmenu, #editmenu {
   border-radius: 4px 4px 0 0;
-}
-
-#contentmenu.actionmenu a, #contentmenu.actionmenu a:visited, #contentmenu .menuarrow, #contentmenu .tmetype,
-#editmenu.actionmenu a, #editmenu.actionmenu a:visited, #editmenu .menuarrow, #editmenu .tmetype,
-.xwikitabbar li a, .xwikitabbar li a:visited, .xwikitabbar li a:active  {
-  #css_textShadow('0', '1px', '0', $theme.menuContentGradientColor)
-}
-
-#contentmenu.actionmenu .submenuitem a ,
-#editmenu.actionmenu .submenuitem a {
-  text-shadow: none;
-}
-
-#mainmenu {
-  box-shadow: 0px 1px 2px $theme.menuGradientColor;
-}
-
-#mainmenu .tmetype, #mainmenu .tme {
-  #css_textShadow('0', '1px', '0', $theme.menuGradientColor)
-}
-
-#mainmenu .tmCreate .tme {
-  text-shadow: none;
-}
-
-#mainmenu .submenu , #contentmenu .submenu  {
-  box-shadow: 0px 1px 1px $theme.borderColor;
-}
-
-.actionmenu .submenu {
-  border-radius: 0 0 10px 10px;
-}
-
-/* Gradients for tmCreate */
-.actionmenu .tmCreate {
-  border-radius: 4px 4px 4px 4px;
-  padding-left: 0;
-}
-
-.actionmenu .tmCreate:hover {
-  border-radius: 4px 4px 0px 0px;
 }
 
 .tmCreate  .tme-extensible {
   padding-left: 10px;
-}
-
-.tmCreate .submenu {
-  border-radius: 0 10px 10px 10px;
-  border: 2px solid $theme.menuAddEntryBackgroundColor;
 }
 
 /* @group COMPONENTS*/
