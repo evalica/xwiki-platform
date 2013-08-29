@@ -139,27 +139,7 @@ th.avatar {
 
 #headerlanguages {
   display: block;
-  padding-top: 4px; /* TODO: Adjust values */
   text-align: right;
-}
-
-#headerlanguages a {
-  background: $theme.menuBackgroundColor;
-  border-radius: 4px;
-  color: $theme.menuLinkColor;
-  display: inline-block;
-  margin: 2px; /* TODO: Adjust values */
-  padding: 2px 4px; /* TODO: Adjust values */
-}
-
-.language-current {
-  font-weight: 700;
-  background: $theme.menuSelectedEntryBackgroundColor !important;
-  color: $theme.menuSelectedEntryLinkColor !important;
-}
-
-.language-default {
-  font-style: italic;
 }
 
 /* ----------------------Content-------------------------*/
