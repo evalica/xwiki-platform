@@ -4,9 +4,9 @@
 -------------------------------------------------------------- */
 #template('colorThemeInit.vm')
 
-/* @group OVERWRITE */
+/* @group STANDARD */
 /* --------------------------------------------------------------
-  * Overwrites the Bootstrap standard values
+  * Sets the styles for standard HTML elements
 -------------------------------------------------------------- */
 /* Used by: Content in panels, vertical-menus, etc. */
 ul, ol {
@@ -23,7 +23,8 @@ li > dl, dt > dl, dd > dl {
 /* --------------------------------------------------------------
   * XWiki Specific classes
 -------------------------------------------------------------- */
-/* -----------------------Verbatim-------------------------*/
+
+/* ---------------------Verbatim-------------------------*/
 tt.wikimodel-verbatim {
   font-family: sans-serif;
   white-space: pre-wrap;
@@ -44,8 +45,7 @@ span.wikicreatelink a {
 /* Round question mark with inverse colors */
 span.wikicreatelink a:after {
   background-color: $theme.linkColor;
-  /* 1.2em is the standard line height */
-  border-radius: 1.2em;
+  border-radius: 1.2em; /* value of the line-height */
   color: $theme.pageContentBackgroundColor;
   content: "?";
   font-size: 75%;
@@ -60,10 +60,8 @@ span.wikicreatelink a:after {
 /* -------------------Edit Section-----------------------*/
 .edit_section {
   display: block;
-  /* Size of the image */
-  height: 20px;
-  /* The value of the <H> bottom margin */
-  margin: -10px 0 0;
+  height: 20px; /* Size of the image */
+  margin: -10px 0 0; /* The value of the <H> bottom margin */
   overflow: hidden;
   position: relative;
 }
@@ -72,9 +70,9 @@ span.wikicreatelink a:after {
   background: transparent url("$xwiki.getSkinFile('icons/xwiki/edit-section.png')") no-repeat left top;
   position: absolute;
   right: 0;
-  text-indent: -1000em;
+  text-indent: -9999px;
   visibility: visible;
-  width: 20px;
+  width: 20px; /* Size of the image */
 }
 
 /* -----------------General Elements---------------------*/
@@ -106,6 +104,7 @@ th.avatar {
 /* --------------------------------------------------------------
   * Layout elements for Colibri skin in view mode
 -------------------------------------------------------------- */
+
 /* ----------------------Header--------------------------*/
 #headerglobal {
   background: $theme.pageHeaderBackgroundColor $!{theme.headerBackgroundImage} $!{theme.headerBackgroundPosition};
@@ -232,7 +231,7 @@ th.avatar {
   letter-spacing: 0.1em;
 }
 
-/* ----------------History----------------*/
+/* ---------------------History--------------------------*/
 #historyform .currentversion td {
   background-color: $theme.highlightColor;
 }
@@ -242,7 +241,7 @@ th.avatar {
   font-size: .85em;
 }
 
-/* ----------------Changes----------------*/
+/* ---------------------Changes--------------------------*/
 #changes-info {
   background: $theme.backgroundSecondaryColor;
   color: $theme.textPrimaryColor;
@@ -300,12 +299,12 @@ th.avatar {
   padding: 1.5em 0 1em;
 }
 
-/* --------------View Source--------------*/
+/* -------------------View Source------------------------*/
 .wiki-code {
   width: 100%;
 }
 
-/* --------------Information--------------*/
+/* -------------------Information------------------------*/
 #informationcontent dd {
   padding: 0 1em 1em;
 }
@@ -470,7 +469,7 @@ th.avatar {
   * Action Menu elements
 -------------------------------------------------------------- */
 
-/* Menus z-indexes */
+/* ----------------Menus z-indexes-----------------------*/
 #mainmenu, #mainmenu.submenu {
   z-index: 1000;
 }
@@ -479,7 +478,7 @@ th.avatar {
   z-index: 999;
 }
 
-/* General */
+/* ---------------------General--------------------------*/
 .actionmenu {
   height: 1.6em;
   min-height: 22px;
@@ -547,7 +546,7 @@ th.avatar {
   line-height: 1.8em;
 }
 
-/* Links */
+/* ---------------------Links----------------------------*/
 .actionmenu a, .actionmenu a:visited {
   display: block;
   float: left;
@@ -616,10 +615,9 @@ th.avatar {
   margin-left: -15px;
 }
 
-/* Icons */
+/* ----------------------Icons---------------------------*/
 .actionmenu .tmCreate {
   background-image: url("$xwiki.getSkinFile('icons/silk/add.png')");
-  background-position:  10px 3px;
 }
 
 .actionmenu .tmWiki {
@@ -791,7 +789,7 @@ th.avatar {
 
 /* @group FORMS */
 /* --------------------------------------------------------------
-  * forms components
+  * Forms components
 -------------------------------------------------------------- */
 .xform h2, .xform legend {
   font-size: 1.2em;
@@ -909,7 +907,11 @@ input.icon-button {
 }
 
 /* @group VERTICAL MENU */
-/* General styling */
+/* --------------------------------------------------------------
+  * Vertical menus used in Administration and Profile
+-------------------------------------------------------------- */
+
+/* ------------------General styling---------------------*/
 .vertical-menu {
   border: 1px solid $theme.borderColor;
   border-top-width: 0;
@@ -945,7 +947,7 @@ input.icon-button {
   word-wrap: break-word;
 }
 
-/* Section titles */
+/* -------------------Section titles---------------------*/
 .vertical-menu .group {
   background-color: $theme.menuContentBackgroundColor;
   #css3_backgroundLinearGradient({
@@ -963,7 +965,7 @@ input.icon-button {
   color: $theme.menuContentLinkColor;
 }
 
-/* Highlight items when hovering */
+/* ------------Highlight items when hovering-------------*/
 .vertical-menu span:hover {
   background-color: $theme.highlightColor;
 }
@@ -983,7 +985,7 @@ input.icon-button {
   color: $theme.menuLinkColor;
 }
 
-/* Selected item */
+/* -------------------Selected item----------------------*/
 .vertical-menu .current {
   background-color: $theme.highlightColor;
   font-weight: bold;
@@ -1005,7 +1007,7 @@ input.icon-button {
   color: $theme.menuLinkColor;
 }
 
-/* Draw an arrow pointing right for the selected item */
+/* --Draw an arrow pointing right for the selected item--*/
 .vertical-menu .current:after, .vertical-menu .current a:after {
   border-left: 10px solid $theme.highlightColor;
   border-top: 1.2em solid transparent;
@@ -1030,6 +1032,7 @@ input.icon-button {
 /* --------------------------------------------------------------
   * Panel elements
 -------------------------------------------------------------- */
+
 #rightPanels {
   float: right;
   margin: 0 0 0 -220px;
@@ -1064,6 +1067,10 @@ h1.xwikipaneltitle {
   cursor: pointer;
 }
 
+.xwikipanelcontents {
+  overflow: hidden;
+}
+
 .collapsed .xwikipanelcontents {
   display: none;
 }
@@ -1077,41 +1084,18 @@ h1.xwikipaneltitle {
   margin-left: 2em;
 }
 
-.panel input, .panel select , .panel dt , .panel table, .padded label {
-  font-size: .95em;
-  margin: 0;
-  padding: 0;
+/* Used by: Create Page Panel, Document Information Panel */
+.panel input, .panel select {
   width: 100%;
 }
 
-.panel dd, .panel .padded {
-  padding: 0 0 .5em;
-}
-
-/* @group CONTAINERS GENERAL STYLING */
-/* --------------------------------------------------------------
-  * General rules that applied to different types of containers
--------------------------------------------------------------- */
-
-/* -------------- Containers gradients -----------------*/
-h1.xwikipaneltitle {
-  #css_textShadow('0', '1px', '0', $theme.panelHeaderGradientColor)
-}
-
-#contentmenu, #editmenu {
-  border-radius: 4px 4px 0 0;
-}
-
-.tmCreate  .tme-extensible {
-  padding-left: 10px;
-}
-
-/* @group COMPONENTS*/
+/* @group COMPONENTS */
 /* --------------------------------------------------------------
   * Different classes with specific use
 -------------------------------------------------------------- */
+
 /* --------------XWiki items types list -----------------*/
-/* Used by: Space Gadget, Information Tab */
+/* Used by: Spaces Macro, Spaceindex Macro, Information Tab */
 ul.xlist {
   margin: 0 0 0 .5em;
   overflow: hidden;
@@ -1170,25 +1154,20 @@ ul.xlist li.xitem .xitemcontainer ul.xlist {
 }
 
 /* ----------------------Messages------------------------*/
-
+/* Used by: Toc Macro */
 .floatinginfobox {
-  background-color: $theme.backgroundSecondaryColor;
   float: right;
-  margin: .66em 0 1em 1em;
-  padding: 10px;
+  margin: 1em 0 1em 1em;
 }
 
 /* Used by: Delete, Copy action message */
 fieldset.xwikimessage {
-  background-color: $theme.backgroundSecondaryColor;
   display: inline-block;
   margin: 5em auto;
-  padding: 1.5em 2em;
   text-align: left;
 }
 
 fieldset.xwikimessage legend {
-  color: $theme.titleColor;
   float: left;
   letter-spacing: .4em;
 }
@@ -1200,14 +1179,12 @@ fieldset.xwikimessage legend {
   white-space: nowrap;
 }
 
-/* ----------------- Accordion -----------------------*/
-
+/* ----------------- Accordion --------------------------*/
+/* Used by: Panel Wizard */
 .accordionTabTitleBar h1 {
-  display:block;
   background: $theme.panelHeaderBackgroundColor url("$xwiki.getSkinFile('icons/xwiki/accordion.png')") no-repeat left;
   border-bottom: 1px solid $theme.borderColor;
   border-top: 1px solid $theme.pageContentBackgroundColor;
-  color: $theme.panelHeaderTextColor;
   margin: 0;
   padding: 4px 21px;
 }
@@ -1218,10 +1195,6 @@ fieldset.xwikimessage legend {
   padding: 5px;
 }
 
-/* @group MACROS */
-/* --------------------------------------------------------------
-  * Different classes for specific macro usage
--------------------------------------------------------------- */
 /* -----------------Footnote Macro-----------------------*/
 ol.footnotes {
   border-top: 1px solid $theme.borderColor;
@@ -1235,24 +1208,8 @@ ol.footnotes {
 }
 
 /* --------------------RSS Macro-------------------------*/
-.rssfeed {
-  background-color: $theme.pageContentBackgroundColor;
-  border: 1px dotted $theme.borderColor;
-  padding: 8px;
-  width: 300px;
-}
-
-/* This rule is for allowing the RSS macro to use all width available when inserted as a gadget in a dashboard
-but still maintain the 300 px width when used as a Macro from the WYSIWYG Editor */
-.column .rssfeed {
-  width: auto;
-}
-
 .rssfeed .rsschanneltitle {
-  background-color: $theme.highlightColor;
   font-weight: 700;
-  margin-bottom: 10px;
-  padding: 5px;
   text-align: center;
 }
 
