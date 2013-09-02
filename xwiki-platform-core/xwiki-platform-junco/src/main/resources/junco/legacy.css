@@ -306,14 +306,6 @@ th.avatar {
 /* --------------------------------------------------------------
   *  Layout elements for Junco skin in edit mode
 -------------------------------------------------------------- */
-.alleditcontent {
-  margin: 0 25px 25px 20px;
-}
-
-.editor-wiki .alleditcontent, .editor-wysiwyg .alleditcontent {
-  margin-right: 225px;
-}
-
 .alleditcontent label {
   display: block;
   margin: 10px 0 4px;
@@ -362,7 +354,6 @@ th.avatar {
   background: $theme.backgroundSecondaryColor;
   padding: 4px 12px;
   margin: 0 -12px 8px -12px;
-  font-size: 90%;
 }
 
 #mainEditArea:target #parentinput, #mainContentArea:target #parentinput,
@@ -393,7 +384,7 @@ th.avatar {
 }
 
 #xwikieditcontentinner {
-  border: 1px solid #E8E8E8;
+  border: 1px solid $theme.borderColor;
 }
 
 #xwikieditcontentinner #content {
