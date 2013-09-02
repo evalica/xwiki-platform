@@ -108,16 +108,14 @@ th.avatar {
 /* ----------------------Header--------------------------*/
 #headerglobal {
   background: $theme.pageHeaderBackgroundColor $!{theme.headerBackgroundImage} $!{theme.headerBackgroundPosition};
-  margin-bottom: 16px; /* TODO: Adjust values */
 }
 
-#companylogo a img {
+#company {
   float: left;
 }
 
 #globallinks {
   float: right;
-  padding: 8px 20px; /* TODO: Adjust values */
 }
 
 .globalsearch input {
@@ -145,7 +143,6 @@ th.avatar {
 
 #mainContentArea, #mainEditArea  {
   overflow: auto;
-  padding: 10px 25px;
 }
 
 #xwikicontent {
@@ -180,8 +177,6 @@ th.avatar {
 /* ---------------Bottom Doc Information------------------*/
 #xdocFooter {
   overflow: auto;
-  padding: 5px 25px 10px;
-  width: auto;
 }
 
 #xdocAuthors {
@@ -191,7 +186,6 @@ th.avatar {
 /* --------------------Doc Extra Tabs--------------------*/
 #docextrapanes {
   overflow: auto;
-  padding: 20px 25px 10px;
 }
 
 .xwikiintracontent fieldset {
@@ -289,17 +283,7 @@ th.avatar {
 }
 
 #footerglobal {
-  margin: 0 225px;
-  padding: 0 0 25px;
   text-align: center;
-}
-
-#body.hideleft #footerglobal{
-  margin: 0 225px 0 0;
-}
-
-#body.hideright #footerglobal {
-  margin: 0 0 0 225px;
 }
 
 /* @group EDIT LAYOUT  */
