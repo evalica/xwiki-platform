@@ -142,32 +142,6 @@ th.avatar {
 }
 
 /* ----------------------Content-------------------------*/
-.leftsidecolumns, #contentcolumn {
-  float: left;
-  width: 100%;
-}
-
-/* TODO: Adjust values */
-.main {
-  margin: 0 200px;
-  padding: 0 25px 25px;
-}
-
-#body.hideleft #contentcolumn .main {
-  margin: 0 200px 0 0;
-}
-
-#body.hideright #contentcolumn .main {
-  margin: 0 0 0 200px;
-}
-
-#body.hidelefthideright #contentcolumn .main {
-  margin: 0;
-}
-
-#body.content #contentcolumn .main {
-  margin: 0 200px;
-}
 
 #mainContentArea, #mainEditArea  {
   overflow: auto;
@@ -1032,36 +1006,6 @@ input.icon-button {
 /* --------------------------------------------------------------
   * Panel elements
 -------------------------------------------------------------- */
-
-#rightPanels {
-  float: right;
-  margin: 0 0 0 -220px;
-  width: 220px;
-}
-
-#leftPanels {
-  float: left;
-  margin: 0 0 0 -100%;
-  width: 220px;
-}
-
-#editPanels {
-  float: left;
-  margin: 0 0 0 -220px;
-  width: 220px;
-}
-
-.panel {
-  width: 190px;
-}
-
-#leftPanels .panel {
-  margin: 0 0 10px 20px;
-}
-
-#rightPanels .panel, #editPanels .panel {
-  margin: 0 0 10px 10px;
-}
 
 h1.xwikipaneltitle {
   cursor: pointer;
