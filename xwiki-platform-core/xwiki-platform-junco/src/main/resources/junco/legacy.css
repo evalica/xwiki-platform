@@ -397,22 +397,15 @@ th.avatar {
 }
 
 .xwikirenderingerror {
-  background: $theme.backgroundSecondaryColor url("$xwiki.getSkinFile('icons/silk/exclamation.png')") no-repeat 8px 50%;
-  border: 1px dotted $theme.borderColor;
-  color: $theme.notificationErrorColor;
   display: block;
-  padding: 2px 28px;
 }
 
 .xwikirenderingerrordescription {
-  border: 1px dotted $theme.borderColor;
   border-width: 0 1px 1px;
   clear: both;
   display: block;
   font-size: 90%;
-  margin: 0 0 4px;
   overflow: auto;
-  padding: 4px 28px;
 }
 
 /* ----------------Objects Editor------------------------*/
