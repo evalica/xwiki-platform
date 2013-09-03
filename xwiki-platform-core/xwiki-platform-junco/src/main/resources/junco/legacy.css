@@ -143,19 +143,8 @@ th.avatar {
 }
 
 /* -----------------Top Doc Information------------------*/
-#hierarchy {
-  font-size: 90%;
-  padding-top: 15px;
-}
-
-#document-title h1 {
-  font-size: 2.15em;
-}
 
 #document-info {
-  color: $theme.textPrimaryColor;
-  font-size: 90%;
-  padding: 3px 0 1em;
   text-align: right;
 }
 
@@ -195,16 +184,9 @@ th.avatar {
   background-color: $theme.highlightColor;
 }
 
-#historyform td {
-  color: $theme.textPrimaryColor;
-  font-size: .85em;
-}
-
 /* ---------------------Changes--------------------------*/
 #changes-info {
   background: $theme.backgroundSecondaryColor;
-  color: $theme.textPrimaryColor;
-  font-size: .9em;
   text-align: center;
   position: relative;
 }
@@ -1043,7 +1025,6 @@ ul.xlist li.attachment {
 
 ul.xlist li.create a {
   background: url("$xwiki.getSkinFile('icons/silk/bullet_add.png')") 7px 3px no-repeat;
-  color: $theme.textSecondaryColor;
   text-decoration: none;
   padding-left: 1.5em;
 }
