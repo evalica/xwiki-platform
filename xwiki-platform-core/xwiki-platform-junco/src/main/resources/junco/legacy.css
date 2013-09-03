@@ -828,26 +828,10 @@ input.icon-button {
 
 /* ------------------General styling---------------------*/
 .vertical-menu {
-  border: 1px solid $theme.borderColor;
-  border-top-width: 0;
   float: left;
   font-size: .857em;/* 14px -> 12px */
   margin: 0 2em 2em 0;
   width: 15em;
-}
-
-.vertical-menu ul {
-  list-style-type: none;
-  margin: 0;
-}
-
-.vertical-menu ul ul ul {
-  margin-left: 2em;
-}
-
-.vertical-menu li {
-  border-top: 1px solid $theme.borderColor;
-  position: relative;
 }
 
 .vertical-menu span {
@@ -860,87 +844,6 @@ input.icon-button {
   padding: .5em .5em .5em 30px;
   text-decoration: none;
   word-wrap: break-word;
-}
-
-/* -------------------Section titles---------------------*/
-.vertical-menu .group {
-  background-color: $theme.menuContentBackgroundColor;
-  #css3_backgroundLinearGradient({
-     'to': 'bottom',
-     'colors': [
-      {'color': $theme.menuContentGradientColor, 'position': '0%'},
-      {'color': $theme.menuContentBackgroundColor, 'position': '100%'}
-    ]
-  })
-  font-weight: 700;
-  font-variant: small-caps;
-}
-
-.vertical-menu .group * {
-  color: $theme.menuContentLinkColor;
-}
-
-/* ------------Highlight items when hovering-------------*/
-.vertical-menu span:hover {
-  background-color: $theme.highlightColor;
-}
-
-.vertical-menu .group:hover {
-  background-color: $theme.menuBackgroundColor;
-  #css3_backgroundLinearGradient({
-     'to': 'bottom',
-     'colors': [
-      {'color': $theme.menuGradientColor, 'position': '0%'},
-      {'color': $theme.menuBackgroundColor, 'position': '50%'}
-    ]
-  })
-}
-
-.vertical-menu .group:hover * {
-  color: $theme.menuLinkColor;
-}
-
-/* -------------------Selected item----------------------*/
-.vertical-menu .current {
-  background-color: $theme.highlightColor;
-  font-weight: bold;
-}
-
-.vertical-menu .current-group {
-  background-color: $theme.menuBackgroundColor;
-  #css3_backgroundLinearGradient({
-     'to': 'bottom',
-     'colors': [
-      {'color': $theme.menuGradientColor, 'position': '0%'},
-      {'color': $theme.menuBackgroundColor, 'position': '50%'}
-    ]
-  })
-  color: $theme.menuLinkColor;
-}
-
-.vertical-menu .current-group *, .vertical-menu .current-group *:visited, .vertical-menu .current-group *:active {
-  color: $theme.menuLinkColor;
-}
-
-/* --Draw an arrow pointing right for the selected item--*/
-.vertical-menu .current:after, .vertical-menu .current a:after {
-  border-left: 10px solid $theme.highlightColor;
-  border-top: 1.2em solid transparent;
-  border-bottom: 1.2em solid transparent;
-  content: "";
-  display: block;
-  position: absolute;
-  right: -10px;
-  top: 0%;
-}
-
-.vertical-menu .current a:after {
-  border-left-color: $theme.borderColor;
-  right: -11px;
-}
-
-.vertical-menu .current-group:after {
-  border-left-color: $theme.menuBackgroundColor !important;
 }
 
 /* @group PANELS */
