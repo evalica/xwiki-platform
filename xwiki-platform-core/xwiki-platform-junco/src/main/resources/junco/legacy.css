@@ -131,7 +131,6 @@ th.avatar {
 }
 
 /* ----------------------Content-------------------------*/
-
 #mainContentArea, #mainEditArea  {
   overflow: auto;
 }
@@ -143,7 +142,6 @@ th.avatar {
 }
 
 /* -----------------Top Doc Information------------------*/
-
 #document-info {
   text-align: right;
 }
@@ -170,7 +168,6 @@ th.avatar {
 
 .xwikiintracontent fieldset {
   margin: 10px 0 0;
-  padding: 8px 8px 8px 0;
 }
 
 .xwikiintracontent legend {
@@ -835,7 +832,7 @@ input.icon-button {
 }
 
 .vertical-menu span {
-  background: none no-repeat scroll 7px transparent;
+  background: none no-repeat scroll 0 transparent;
   display: block;
 }
 
