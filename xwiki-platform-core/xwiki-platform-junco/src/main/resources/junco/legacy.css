@@ -392,12 +392,7 @@ th.avatar {
 
 /* ---------------------General--------------------------*/
 .actionmenu {
-  height: 1.6em;
-  min-height: 22px;
-  width: 100%;
   position: relative;
-  left: 0;
-  top: 0;
   z-index: 999;
 }
 
@@ -409,13 +404,11 @@ th.avatar {
 }
 
 .leftmenu {
-  position: absolute;
   left: 0;
   padding-left: 25px;
 }
 
 .rightmenu {
-  position: absolute;
   right: 0;
   padding-right: 10px;
 }
