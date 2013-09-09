@@ -108,4 +108,5 @@
 #end
 ## These elements will be closed in the htmlfooter.vm file
 <$bodyTagName id="body" class="wiki-${xcontext.database} space-${escapetool.xml($doc.space.replaceAll(' ', '_'))} ${bodyAction}body #if($showLeftPanels == "0")hideleft#end#if($showRightPanels == "0")hideright#end#if($hidecolumns && ($!hidecolumns == 1))hidelefthideright#end">
-<div id="xwikimaincontainer" class="container">
+<div id="xwikimaincontainer">
+<div id="xwikimaincontainerinner">
