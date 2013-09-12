@@ -35,5 +35,6 @@
   <description>Parent POM for Junco Themes modules</description>
   <modules>
     <module>xwiki-platform-junco-theme-colibri</module>
+    <module>xwiki-platform-junco-theme-blueberry</module>
   </modules>
 </project>
