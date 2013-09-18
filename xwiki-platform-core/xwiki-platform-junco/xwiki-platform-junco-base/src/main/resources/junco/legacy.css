@@ -105,6 +105,10 @@ th.avatar {
   * Layout elements for Colibri skin in view mode
 -------------------------------------------------------------- */
 
+#body { /* Responsability given in legacy to #xwikimaincontainerinner */
+  background: $theme.pageBackgroundColor $!{theme.pageBackgroundImage} $!{theme.pageBackgroundPosition};
+}
+
 /* ----------------------Header--------------------------*/
 #headerglobal {
   background: $theme.pageHeaderBackgroundColor $!{theme.headerBackgroundImage} $!{theme.headerBackgroundPosition};
