@@ -186,8 +186,7 @@
     </property>
     <property>
       <style.css>@import "$xwiki.getSkinFile('themes/blueberry/bootstrap.min.css', true)";
-@import "$xwiki.getSkinFile('legacy.css', true)#if ("$!{request.colorTheme}" != '')?colorTheme=${request.colorTheme}#end";
-@import "$xwiki.getSkinFile('junco.css', true)#if ("$!{request.colorTheme}" != '')?colorTheme=${request.colorTheme}#end";</style.css>
+@import "$xwiki.getSkinFile('legacy.css', true)#if ("$!{request.colorTheme}" != '')?colorTheme=${request.colorTheme}#end";</style.css>
     </property>
     <property>
       <view.vm/>
