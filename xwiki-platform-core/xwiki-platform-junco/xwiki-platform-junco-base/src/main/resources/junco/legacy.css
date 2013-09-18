@@ -106,7 +106,8 @@ th.avatar {
 -------------------------------------------------------------- */
 
 #body { /* Responsability given in legacy to #xwikimaincontainerinner */
-  background: $theme.pageBackgroundColor $!{theme.pageBackgroundImage} $!{theme.pageBackgroundPosition};
+  background-image: $!{theme.pageBackgroundImage};
+  background-repeat: $!{theme.pageBackgroundPosition};
 }
 
 /* ----------------------Header--------------------------*/
