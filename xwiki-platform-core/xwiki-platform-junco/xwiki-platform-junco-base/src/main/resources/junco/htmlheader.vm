@@ -14,7 +14,7 @@
     ## Ensure that the Content-Type meta directive is the first one in the header.
     ## See http://www.w3.org/International/tutorials/tutorial-char-enc/
     ## ---------------------------------------------------------------------------------------------------------------
-    <meta charset="$xwiki.encoding" />
+    <meta http-equiv="Content-Type" content="text/html; charset=$xwiki.encoding" />
     ## ---------------------------------------------------------------------------------------------------------------
     ## Mobile optimized: Set the viewport specifying how the content should fit on the device's screen 
     ## ---------------------------------------------------------------------------------------------------------------
