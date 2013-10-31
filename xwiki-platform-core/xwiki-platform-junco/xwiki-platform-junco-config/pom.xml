@@ -26,16 +26,15 @@
   <modelVersion>4.0.0</modelVersion>
   <parent>
     <groupId>org.xwiki.platform</groupId>
-    <artifactId>xwiki-platform-core</artifactId>
+    <artifactId>xwiki-platform-junco</artifactId>
     <version>5.2-SNAPSHOT</version>
   </parent>
-  <artifactId>xwiki-platform-junco</artifactId>
-  <name>XWiki Platform - Junco - Parent POM</name>
-  <packaging>pom</packaging>
-  <description>Parent POM for Junco modules</description>
-  <modules>
-    <module>xwiki-platform-junco-base</module>
-    <module>xwiki-platform-junco-config</module>
-    <module>xwiki-platform-junco-themes</module>
-  </modules>
+  <artifactId>xwiki-platform-junco-config</artifactId>
+  <name>XWiki Platform - Junco - Config</name>
+  <description>Junco - Configuration</description>
+  <packaging>xar</packaging>
+  <properties>
+    <!-- Don't run CLIRR here since there's no Java code. -->
+    <xwiki.clirr.skip>true</xwiki.clirr.skip>
+  </properties>
 </project>
